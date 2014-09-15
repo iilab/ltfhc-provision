@@ -104,10 +104,10 @@
     - file: name=/srv/tftp owner=root group=root state=directory
       sudo: yes
     - name: Import Debian 7 image in Cobbler
-      command: cobbler import --name=debian7-net --breed=debian --arch=amd64 --os-version=wheezy --path="rsync://ftp.us.debian.org/debian/dists/wheezy/main/installer-amd64/current/images/netboot/debian-installer/amd64"
+      command: cobbler import --name=debian7-net --breed=debian --arch=i386 --os-version=wheezy --path="/vagrant/distro" --kickstart=/var/lib/cobbler/kickstarts/debian.seed
       sudo: yes
     - name: Create system for ltfhc-bujumbura test server. 
-      command: cobbler system add --name=ltfhc-bujumbura --profile=debian7-net-x86_64 --kickstart=/var/lib/cobbler/kickstarts/debian.seed
+      command: cobbler system add --name=ltfhc-bujumbura --profile=debian7-net-i386 --kickstart=/var/lib/cobbler/kickstarts/debian.seed
       sudo: yes 
     - name: Setup ltfhc-bujumbura test server
       command: cobbler system edit --name=ltfhc-bujumbura --interface=eth0 --mac=00:1F:F2:08:3B:A1 --ip-address=192.168.168.170 --netmask=255.255.255.0 --static=1 --dns-name=bujumbura
