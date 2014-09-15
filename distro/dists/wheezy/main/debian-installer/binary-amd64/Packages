@@ -1,0 +1,3811 @@
+Package: alsa-base-udeb
+Source: alsa-base
+Version: 1.0.25+3~deb7u1
+Installed-Size: 18
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: all
+Provides: alsa
+Recommends: alsa-utils
+Description: ALSA driver configuration files for Debian Installer
+Description-md5: 1fd11f56df1b5d2abf4c17fd71f880b5
+Section: debian-installer
+Priority: optional
+Filename: pool/main/a/alsa-base/alsa-base-udeb_1.0.25+3~deb7u1_all.udeb
+Size: 1266
+MD5sum: 07311d814b05453d8f2887060cfd40a8
+SHA1: e531d9db2717b65f461fe86967b805897dc5f9cb
+SHA256: e88a29225501835be63fcf17802c4f5f3355e403d0b8f0f6295af80e45ad3414
+
+Package: libasound2-udeb
+Source: alsa-lib
+Version: 1.0.25-4
+Installed-Size: 1152
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: shared library for ALSA applications (udeb)
+Description-md5: 844d1bd91111279036698cd2bff8eb54
+Section: debian-installer
+Priority: optional
+Filename: pool/main/a/alsa-lib/libasound2-udeb_1.0.25-4_amd64.udeb
+Size: 322754
+MD5sum: e93b0178bad1a01db6b8c0d2524933c0
+SHA1: 47f240243fffb836a2b21e8d6c026f901c00a66e
+SHA256: 80466155f67c72a037004d5f8ebdb232b83b7fa9854b696c47851f600422be64
+
+Package: alsa-utils-udeb
+Source: alsa-utils
+Version: 1.0.25-4
+Installed-Size: 184
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: amd64
+Provides: audio-mixer
+Depends: libasound2-udeb (>> 1.0.25), libc6-udeb (>= 2.13)
+Description: Utilities for configuring and using ALSA (udeb)
+Description-md5: 24c2f2ba942a36d5f81f1a95fd0e120d
+Section: debian-installer
+Priority: optional
+Filename: pool/main/a/alsa-utils/alsa-utils-udeb_1.0.25-4_amd64.udeb
+Size: 50936
+MD5sum: 3ca147d5830b6e973c24fda0c7bd1d80
+SHA1: 9d4224894292fa5046e480ecbaecdbcb96e26371
+SHA256: 7422c96d469565d5a53f15c704f5fc4b471ecbe49b6046297379eae6e061f306
+
+Package: apt-cdrom-setup
+Source: apt-setup
+Version: 1:0.79
+Installed-Size: 337
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: apt-mirror-setup
+Depends: cdrom-detect, cdebconf-udeb
+Description: set up a CD in sources.list
+Description-md5: 36d3ea08e71ebf96729243a98855cf22
+Section: debian-installer
+Priority: extra
+Filename: pool/main/a/apt-setup/apt-cdrom-setup_0.79_all.udeb
+Size: 95580
+MD5sum: cd36bf128b7f56955f66387a5d0c009b
+SHA1: 610494562d3b67153c680acab3cdbdd47f72846f
+SHA256: 71a7f7facde9214881cef8de59ecdacf6a18eb8f92bb0b29ba29d3b633dff58c
+
+Package: apt-mirror-setup
+Source: apt-setup
+Version: 1:0.79
+Installed-Size: 209
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: choose-mirror-bin, cdebconf-udeb
+Description: set up a mirror in sources.list
+Description-md5: e5310581ee418f3a883c16699697cb38
+Section: debian-installer
+Priority: extra
+Filename: pool/main/a/apt-setup/apt-mirror-setup_0.79_all.udeb
+Size: 72908
+MD5sum: 92571335cd60ace877835d0309a1c447
+SHA1: dd7c86ad9940d9a2df8105961df75298d57dd0bc
+SHA256: 3eb44779efeee8d85c9eaa2fb33712bc6b3b84952871bcb76cccaf35eb8ff37b
+
+Package: apt-setup-udeb
+Source: apt-setup
+Version: 1:0.79
+Installed-Size: 203
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: apt-mirror-setup, installed-base, di-utils (>= 1.70), cdebconf-udeb
+Description: Configure apt
+Description-md5: 371a44f059ba31d63d9a2478ec4466f6
+Installer-Menu-Item: 7000
+Section: debian-installer
+Priority: standard
+Filename: pool/main/a/apt-setup/apt-setup-udeb_0.79_all.udeb
+Size: 65490
+MD5sum: fc6345a2cf236fca15a9ea6ce71c1fea
+SHA1: 4a0537e3bd5ca7aef3effcae68a31e414bb24681
+SHA256: ee382c0a76e961b86c494331ee7068313d0b285beb4d2ac61988870da3e681f1
+
+Package: base-installer
+Version: 1.130
+Installed-Size: 173
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, di-utils-mapdevfs, di-utils (>= 1.48), rootskel (>= 1.19)
+Description: base system installation framework
+Description-md5: 67ab8cec64480d34e103eb2e56cc313a
+Section: debian-installer
+Priority: required
+Filename: pool/main/b/base-installer/base-installer_1.130_all.udeb
+Size: 46912
+MD5sum: f3795e44bb7823c5e72a6f8ef7be86da
+SHA1: 32265d33b55b6d7b862877e45f8513c324250915
+SHA256: 29185f27d68760951a244aa63e1eb8f192ecd83a0e4016ed6c9c4eae1db41443
+
+Package: bootstrap-base
+Source: base-installer
+Version: 1.130
+Installed-Size: 689
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: installed-base, kernel-installer
+Depends: libc6-udeb (>= 2.13), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.85), mounted-partitions, created-fstab, base-installer, debootstrap-udeb (>= 1.0.7), gpgv-udeb, debian-archive-keyring-udeb, archdetect
+Description: Install the base system
+Description-md5: 39bbfd161b99a078177ae8e6ae9edeea
+Installer-Menu-Item: 6500
+Section: debian-installer
+Priority: required
+Filename: pool/main/b/base-installer/bootstrap-base_1.130_amd64.udeb
+Size: 191226
+MD5sum: 37acabd543fd1f962e85a2517e1e1370
+SHA1: 0c4ba17aeb44d204cd5bb05f444f5d30ab9d4904
+SHA256: 6a95f29209f9f6d50cc8b16ab73331ffd09e98956d94317a1483a5dc8afb39ad
+
+Package: beep-udeb
+Source: beep (1.3-3)
+Version: 1.3-3+b1
+Installed-Size: 10
+Maintainer: Gerfried Fuchs <rhonda@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: advanced pc-speaker beeper - minimal package
+Description-md5: d1356f7bfac8da803c7e063f13654f68
+Section: debian-installer
+Priority: optional
+Filename: pool/main/b/beep/beep-udeb_1.3-3+b1_amd64.udeb
+Size: 5100
+MD5sum: cd095666737b0e50a81f46ff7bb8baff
+SHA1: 113048bc87dfdb26cbbb4bb148a76b2477d41084
+SHA256: 37ef37bce4f4512b0cc80d6a3d8ef0b850f9ceada4f98efe1e2226b3b99b284f
+
+Package: bterm-unifont
+Source: bterm-unifont (1.2)
+Version: 1.2+b1
+Installed-Size: 2457
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: bogl-bterm-udeb
+Description: Include complete Unicode font for bogl-bterm
+Description-md5: 1f7d31ea235ef5101bf727dcb05e2f94
+Section: debian-installer
+Priority: optional
+Filename: pool/main/b/bterm-unifont/bterm-unifont_1.2+b1_amd64.udeb
+Size: 444312
+MD5sum: 1fd4e096436b0b541ad738564d2bb5ca
+SHA1: 9fb386f86f19ffcded74836093eadd86832ab0b9
+SHA256: a36238e775217d26717668d5656fcbfe6dc8f0728336a6f3a4245abf2b88f4d6
+
+Package: btrfs-tools-udeb
+Source: btrfs-tools
+Version: 0.19+20120328-7.1
+Installed-Size: 453
+Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: amd64
+Depends: e2fsprogs-udeb (>= 1.33-3), libc6-udeb (>= 2.13), libuuid1-udeb (>= 2.16)
+Description: Checksumming Copy on Write Filesystem utilities (udeb)
+Description-md5: 6fb6ac2b0166006bcab8da3bd23124d3
+Section: debian-installer
+Priority: optional
+Filename: pool/main/b/btrfs-tools/btrfs-tools-udeb_0.19+20120328-7.1_amd64.udeb
+Size: 101552
+MD5sum: 61cf7eaf4a1837d05652675c3a300e46
+SHA1: dd2e22e3775aedc21580669a65c55dd41580f71e
+SHA256: c9aa59fb02e3e26bccf9714874292b9c4ca31e5605f583e634cb5861008445d5
+
+Package: cdebconf-gtk-entropy
+Source: cdebconf-entropy
+Version: 0.24
+Installed-Size: 72
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: cdebconf-entropy
+Depends: cdebconf-gtk-udeb, fontconfig-udeb (>= 2.9.0), libatk1.0-udeb (>= 2.4.0), libc6-udeb (>= 2.13), libcairo2-udeb (>= 1.12.0), libfreetype6-udeb (>= 2.4.0), libgdk-pixbuf2.0-0-udeb (>= 2.26.1), libglib2.0-udeb (>= 2.32.3), libgtk2.0-0-udeb (>= 2.24.0), libpango1.0-udeb (>= 1.29.4), cdebconf-udeb
+Description: cdebconf gtk plugin for reading from /dev/random
+Description-md5: f6c3eb86d8c5f94e7038f3c65fa2a507
+Section: debian-installer
+Priority: extra
+Filename: pool/main/c/cdebconf-entropy/cdebconf-gtk-entropy_0.24_amd64.udeb
+Size: 17224
+MD5sum: 1c462e8803f9663b5458828c671ca454
+SHA1: c531acfe6b87479d0022ad3e8534acd763a598f6
+SHA256: dd2cf7213ddea67a49d23d2447d02321858d17637027a35cea7da2dbf2527904
+
+Package: cdebconf-newt-entropy
+Source: cdebconf-entropy
+Version: 0.24
+Installed-Size: 70
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: cdebconf-entropy
+Depends: cdebconf-newt-udeb, libc6-udeb (>= 2.13), libnewt0.52, libtextwrap1-udeb, cdebconf-udeb
+Description: cdebconf newt plugin for reading from /dev/random
+Description-md5: b5c1370e479ec0df7c84e09c4ea23a43
+Section: debian-installer
+Priority: extra
+Filename: pool/main/c/cdebconf-entropy/cdebconf-newt-entropy_0.24_amd64.udeb
+Size: 18340
+MD5sum: 3d8371b9e8469d25c58ab2b722bcf7bf
+SHA1: eed8fd97fc1e8460f26468a013fc9bfca3349806
+SHA256: 498a9a7dd26d013057d0341b736ad9dfec4c081446763ab41bf8a41e5a701f6a
+
+Package: cdebconf-text-entropy
+Source: cdebconf-entropy
+Version: 0.24
+Installed-Size: 69
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: cdebconf-entropy
+Depends: cdebconf-text-udeb, libc6-udeb (>= 2.13), cdebconf-udeb
+Description: cdebconf text plugin for reading from /dev/random
+Description-md5: 401c075ae4495bcca3639644f8bcc4f5
+Section: debian-installer
+Priority: extra
+Filename: pool/main/c/cdebconf-entropy/cdebconf-text-entropy_0.24_amd64.udeb
+Size: 18024
+MD5sum: ef2d6415ecd5b3eb7ca706cb4cd6f4e3
+SHA1: 7b4a5ae36f6e2d3957200a31fb43c4eae284f353
+SHA256: 60c0f5827a7ff76874547ba36bfefe4000b116bd621a3d47bb546f013f8cd861
+
+Package: cdebconf-newt-terminal
+Source: cdebconf-terminal
+Version: 0.18
+Installed-Size: 39
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: cdebconf-terminal
+Depends: cdebconf-newt-udeb (>= 0.146), libc6-udeb (>= 2.13), libnewt0.52
+Description: cdebconf newt plugin to provide a clean terminal
+Description-md5: 4109a053022081b573d864d84d6eb16d
+Section: debian-installer
+Priority: extra
+Filename: pool/main/c/cdebconf-terminal/cdebconf-newt-terminal_0.18_amd64.udeb
+Size: 4572
+MD5sum: ec2a8ef62d781c68efa9d92a1a29fc7b
+SHA1: 5b53ed39674a399b142df0ab7b8b6cc908d09453
+SHA256: 7d6586c9ec4553a1fab7659f9155004b692c950d9bea3704777a43d1389d005e
+
+Package: choose-mirror
+Version: 2.45
+Installed-Size: 9
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: configured-network, choose-mirror-bin
+Description: Choose mirror to install from (menu item)
+Description-md5: bb81d5c2f464af11ba4af8a09a68332c
+Installer-Menu-Item: 2300
+Section: debian-installer
+Priority: extra
+Filename: pool/main/c/choose-mirror/choose-mirror_2.45_all.udeb
+Size: 1000
+MD5sum: ff11e11fec7ec8d9a671e4075981961a
+SHA1: ce5aa033084d63922bc5240f4668b52d872a2895
+SHA256: 05edce64c03e750c53ff3264621c2b93b12ce9f27e26df03e684c97a8322e5e2
+
+Package: choose-mirror-bin
+Source: choose-mirror
+Version: 2.45
+Installed-Size: 560
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.85), cdebconf-udeb
+Description: Choose mirror to install from (program)
+Description-md5: 08d2ba0f1dd26b7617862ed9e75df38d
+Section: debian-installer
+Priority: extra
+Filename: pool/main/c/choose-mirror/choose-mirror-bin_2.45_amd64.udeb
+Size: 194452
+MD5sum: f38d9c24238897436cd54c043d00bc87
+SHA1: 6014c2f1202c29b0db80cbddd0222d6ccb1040e3
+SHA256: 531eaa2a63ad3b7023f2c29551a1be61a0f2e15503359365d254b61f0a9361e4
+
+Package: clock-setup
+Version: 0.114
+Installed-Size: 189
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), cdebconf-udeb, localechooser, tzsetup-udeb, di-utils (>= 1.66), configured-network, rdate-udeb
+Description: set up clock
+Description-md5: 6d528d9bb114c9d11e53032d3cd27964
+Installer-Menu-Item: 2600
+Section: debian-installer
+Priority: standard
+Filename: pool/main/c/clock-setup/clock-setup_0.114_amd64.udeb
+Size: 62010
+MD5sum: d98342ae34caa943edca5b408057c21d
+SHA1: 2751e50d80ecd1b85c5ee15b9329a07515fd7243
+SHA256: 61187776bb20f46a8311d8c5f55877736225b799d6a9b007614dcc504dcad6b9
+
+Package: console-keymaps-mac
+Source: console-data
+Version: 2:1.12-2
+Installed-Size: 66
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Architecture: all
+Provides: console-keymaps
+Depends: cdebconf-udeb
+Description: keymaps for Apple keyboards
+Description-md5: 2f02508350087a688d327c7df42c49bd
+Section: debian-installer
+Priority: extra
+Filename: pool/main/c/console-data/console-keymaps-mac_1.12-2_all.udeb
+Size: 18536
+MD5sum: 0ba09073453c1be009a84af3db54242a
+SHA1: 32e065c8dcddc46ed3a1a32375e65068cd06eb33
+SHA256: 94c8f10083ebfa887d77b6611bb95f81bd6ffb2232140ddac31f57baf10f7049
+
+Package: cpuburn-udeb
+Source: cpuburn
+Version: 1.4a-3
+Installed-Size: 18
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Architecture: amd64
+Depends: cdebconf-udeb
+Description: perform CPU stress test (burn in) - expert use only
+Description-md5: 16d2c8bfa002cf8683a4e0428d7e6ba4
+Installer-Menu-Item: 2600
+Section: debian-installer
+Priority: optional
+Filename: pool/main/c/cpuburn/cpuburn-udeb_1.4a-3_amd64.udeb
+Size: 8028
+MD5sum: fbcaae0b80ea2c0a2d2718322bfd1b8e
+SHA1: 0ddd18f799d7f80e786c9a4eb1f182d9699be8f9
+SHA256: 25a4dfe3e86da264e991ffec1df185d0a4c33860acd77651f462f5957b916e28
+
+Package: cryptsetup-udeb
+Source: cryptsetup
+Version: 2:1.4.3-4
+Installed-Size: 141
+Maintainer: Debian Cryptsetup Team <pkg-cryptsetup-devel@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libcryptsetup4-udeb (>= 2:1.4.3), libpopt0-udeb (>= 1.16), dmsetup-udeb
+Description: disk encryption support - commandline tools (udeb)
+Description-md5: 52bbf78ff2ce156780cd8d95c9cb2d8c
+Section: debian-installer
+Priority: optional
+Filename: pool/main/c/cryptsetup/cryptsetup-udeb_1.4.3-4_amd64.udeb
+Size: 30660
+MD5sum: bf23a92e606369fdb6a4afad83ce27fe
+SHA1: 5441c0d6eae896de044ed90d63821ccae07d0641
+SHA256: 70b6dac4a90df92d2d538167da80bcdc8caf0ed79f2f8812d30cd5a5b19c9835
+
+Package: libcryptsetup4-udeb
+Source: cryptsetup
+Version: 2:1.4.3-4
+Installed-Size: 115
+Maintainer: Debian Cryptsetup Team <pkg-cryptsetup-devel@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdevmapper1.02.1-udeb (>= 2:1.02.74), libgcrypt11-udeb (>= 1.5.0-0), libuuid1-udeb (>= 2.16)
+Description: disk encryption support - shared library (udeb)
+Description-md5: 6f1217c3d1c277347574a473155e2e9c
+Section: debian-installer
+Priority: optional
+Filename: pool/main/c/cryptsetup/libcryptsetup4-udeb_1.4.3-4_amd64.udeb
+Size: 42594
+MD5sum: 269df8b1a7cdea646780d92f55d4da9f
+SHA1: 3bb32195c97e77ad67d31c377cc8e14227fd60e5
+SHA256: 277cb3feb7ddff6f1b6cb379a7250550e8a30c6e11b38aca44257c12bab179d3
+
+Package: debian-archive-keyring-udeb
+Source: debian-archive-keyring
+Version: 2012.4
+Installed-Size: 34
+Maintainer: Debian Release Team <packages@release.debian.org>
+Architecture: all
+Recommends: gpgv-udeb
+Description: GnuPG keys of the Debian archive
+Description-md5: f0d27623e9053ef250935a21b0d334e7
+Section: debian-installer
+Priority: optional
+Filename: pool/main/d/debian-archive-keyring/debian-archive-keyring-udeb_2012.4_all.udeb
+Size: 13990
+MD5sum: e7d6ee342351f15a98c1106809a906bd
+SHA1: 57ee33b13817ae393bf9a87204760990a35567fe
+SHA256: 7d5c91aaf37eff711439d98b0835afbaf4a2d9ab38a7985d16f8aa4b7d11a700
+
+Package: di-utils-mapdevfs
+Source: debian-installer-utils
+Version: 1.92+deb7u1
+Installed-Size: 5
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdebian-installer4-udeb (>= 0.85)
+Description: mapdevfs utility for the debian installer
+Description-md5: f4440d5439e806409615bf983eb92485
+Section: debian-installer
+Priority: standard
+Filename: pool/main/d/debian-installer-utils/di-utils-mapdevfs_1.92+deb7u1_amd64.udeb
+Size: 2312
+MD5sum: 7edfec80116a78bc4d4d5e4f20dafa92
+SHA1: 53180011bd3694e032f06564fd85ff49841444a5
+SHA256: 464b7ece16d823b905a230780b568913b7b35a2c564a819e28e0a33960c11af0
+
+Package: debootstrap-udeb
+Source: debootstrap
+Version: 1.0.48+deb7u1
+Installed-Size: 95
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: mounted-partitions
+Description: Bootstrap the Debian system
+Description-md5: bfa0d2d63c72f081b034836355879246
+Section: debian-installer
+Priority: extra
+Filename: pool/main/d/debootstrap/debootstrap-udeb_1.0.48+deb7u1_all.udeb
+Size: 17930
+MD5sum: bc5fed0ae8e256dc28f462bcfdbf7b20
+SHA1: d5d317942ce042b1ca65082d59023f423af6e9f4
+SHA256: 82004ab251c35e43f15e3d8ecd9dfd00fc9500e844dfcf2f028e94f08e3d3783
+
+Package: devio-udeb
+Source: devio (1.2-1)
+Version: 1.2-1+b1
+Installed-Size: 32
+Maintainer: Rod Whitby <rod@whitby.id.au>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.10)
+Description: correctly read (or write) a region of a block device
+Description-md5: 23e7afb8fe1a2b5588979b1c91e1dc06
+Section: debian-installer
+Priority: optional
+Filename: pool/main/d/devio/devio-udeb_1.2-1+b1_amd64.udeb
+Size: 14838
+MD5sum: 859815ab19ce667301cf90820d39b353
+SHA1: c2a143a4a7b5a3ea03e1d7deaf73bf3448ea241a
+SHA256: f0ef422a61c81386c864c58a52dd666ef3be0fa347ccbc0e46ea07e5d61d01ec
+
+Package: dmidecode-udeb
+Source: dmidecode
+Version: 2.11-9
+Installed-Size: 115
+Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: SMBIOS/DMI table decoder (udeb)
+Description-md5: bdfb786c6a57097be8c8600b800e749f
+Section: debian-installer
+Priority: optional
+Filename: pool/main/d/dmidecode/dmidecode-udeb_2.11-9_amd64.udeb
+Size: 29188
+MD5sum: ae70341c4d96dcded89fa670bcfea31e
+SHA1: 9532ae4226a85805189a671ee0283f719d48a5ba
+SHA256: bbb3a2cb07f741c3995b6d4bb08d772d83582b93a0236d4ea7736bc0370fc320
+
+Package: dmraid-udeb
+Source: dmraid
+Version: 1.0.0.rc16-4.2
+Installed-Size: 41
+Maintainer: Giuseppe Iuculano <iuculano@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdmraid1.0.0.rc16-udeb (>= 1.0.0.rc16), dmsetup-udeb
+Description: Device-Mapper Software RAID support tool (udeb)
+Description-md5: 8d81dfab4faac1439ae7390ff7ec2639
+Section: debian-installer
+Priority: optional
+Filename: pool/main/d/dmraid/dmraid-udeb_1.0.0.rc16-4.2_amd64.udeb
+Size: 10352
+MD5sum: bba479634223512d5ebb959351faba10
+SHA1: b691b1ddab81c37dcdcdd557dd09c2f3795c4862
+SHA256: ec359480efc691d7d6c2419297f17f017be45ce85263dbeee0229824d6b25a32
+
+Package: libdmraid1.0.0.rc16-udeb
+Source: dmraid
+Version: 1.0.0.rc16-4.2
+Installed-Size: 212
+Maintainer: Giuseppe Iuculano <iuculano@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdevmapper1.02.1-udeb (>= 2:1.02.74)
+Description: Device-Mapper Software RAID support tool - shared library (udeb)
+Description-md5: e389c1facb46b99cbb852f2658b63ef1
+Section: debian-installer
+Priority: optional
+Filename: pool/main/d/dmraid/libdmraid1.0.0.rc16-udeb_1.0.0.rc16-4.2_amd64.udeb
+Size: 79944
+MD5sum: 877f683fe951403ca7c35d7b46d8f2d5
+SHA1: 5616d28c5d02ac9a61764d629a191c3e5cd24eb4
+SHA256: 71072915efa89449c0f0a5f810b91ea2d1b2d673235c4ef011cf82c6ff2e0222
+
+Package: e2fsprogs-udeb
+Source: e2fsprogs
+Version: 1.42.5-1.1
+Installed-Size: 714
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Architecture: amd64
+Depends: libblkid1-udeb, libc6-udeb (>= 2.13), libuuid1-udeb
+Description: stripped-down versions of e2fsprogs, for debian-installer
+Description-md5: 74dfc04698fdd8cf96e97440ea52534f
+Section: debian-installer
+Priority: optional
+Filename: pool/main/e/e2fsprogs/e2fsprogs-udeb_1.42.5-1.1_amd64.udeb
+Size: 244898
+MD5sum: f39681baed340db54a89c510e913165b
+SHA1: 318901c0144e477a0b7ec94a5afa1fad64a94642
+SHA256: e559693f9973623051044cd3ed85277763f5c4d9e8c17a067b808ab53e77e2b3
+
+Package: efi-reader
+Version: 0.11
+Installed-Size: 32
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.83)
+Description: Select default values from EFI configuration.
+Description-md5: b573251ba8d2a3f0211b88bb48bb07a9
+Section: debian-installer
+Priority: optional
+Filename: pool/main/e/efi-reader/efi-reader_0.11_amd64.udeb
+Size: 3546
+MD5sum: 106f4064528a72d83397c8efdcedc0d9
+SHA1: 7ad8efbc49976048fb0d53f0be430c2373f48680
+SHA256: 2ab87eea0803816c447a477eee24450e2dfc294c19d3025d34843e9080007667
+
+Package: libc6-udeb
+Source: eglibc
+Version: 2.13-38+deb7u2
+Installed-Size: 2490
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: amd64
+Provides: glibc-2.13-1, libc-udeb, libc6
+Description: Embedded GNU C Library: Shared libraries - udeb
+Description-md5: 9552ce73b7b3fb466e3d89fe8db9a563
+Section: debian-installer
+Priority: extra
+Filename: pool/main/e/eglibc/libc6-udeb_2.13-38+deb7u2_amd64.udeb
+Size: 938542
+MD5sum: c24d4656062cf8691a9cb3069d3ece94
+SHA1: c6398eb9b5e1ad7c2e40357c8b23520797338118
+SHA256: 210128bdabecd0369ae207db8986aa4bfa3616a283d829593fdb7f6e65858c17
+
+Package: libnss-dns-udeb
+Source: eglibc
+Version: 2.13-38+deb7u2
+Installed-Size: 35
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: amd64
+Description: Embedded GNU C Library: NSS helper for DNS - udeb
+Description-md5: a89d70d6df0ab6a1b8d4f85919f951c9
+Section: debian-installer
+Priority: extra
+Filename: pool/main/e/eglibc/libnss-dns-udeb_2.13-38+deb7u2_amd64.udeb
+Size: 10188
+MD5sum: a33058c62e939298a280e3e50910841e
+SHA1: 28ed410987fe8f3b75fd673cdbc06045f687756f
+SHA256: 83d7598243dbb0e9c8aa91f60dcacfc7ad39dd8a9d0a5ad9765a2251db1d5a32
+
+Package: libnss-files-udeb
+Source: eglibc
+Version: 2.13-38+deb7u2
+Installed-Size: 59
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: amd64
+Description: Embedded GNU C Library: NSS helper for files - udeb
+Description-md5: 751453d762a0df849992ca714f5cb05b
+Section: debian-installer
+Priority: extra
+Filename: pool/main/e/eglibc/libnss-files-udeb_2.13-38+deb7u2_amd64.udeb
+Size: 16090
+MD5sum: 135c940e94f4fdba6a527b2a8bac8b78
+SHA1: 9db9c3150553321f698413001d2618b9ba533907
+SHA256: cd9c442768d431d8d0c0fa12c23c60b7c3bc339b6404fb715fb8a12e0c2e9bdf
+
+Package: eject-udeb
+Source: eject
+Version: 2.1.5+deb1+cvs20081104-13
+Installed-Size: 156
+Maintainer: Frank Lichtenheld <djpig@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), cdebconf-udeb
+Description: ejects CDs from d-i menu
+Description-md5: c6ca787863de73a4b13afa9a80602d15
+Installer-Menu-Item: 96000
+Section: debian-installer
+Priority: optional
+Filename: pool/main/e/eject/eject-udeb_2.1.5+deb1+cvs20081104-13_amd64.udeb
+Size: 31704
+MD5sum: b0cd7f954b78d17b658e0ba475b263fc
+SHA1: 3f21027489492721482cced65699ecc2f69c086e
+SHA256: 15daad4a98f4d7a1ff13a88c2401679efc3fe20ea0ec87339fed6a39cf471fe5
+
+Package: espeak-data-udeb
+Source: espeak
+Version: 1.46.02-2
+Installed-Size: 1418
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Architecture: amd64
+Description: Multi-lingual software speech synthesizer: data for d-i
+Description-md5: feee3efb5a9b8e9002e1c3e5193082f1
+Section: debian-installer
+Priority: optional
+Filename: pool/main/e/espeak/espeak-data-udeb_1.46.02-2_amd64.udeb
+Size: 677326
+MD5sum: 33fd350ba61449043d02eb1b81efd169
+SHA1: da441ef31d10c7dbb7c53f467d47dd6f0f4daff6
+SHA256: 1277b96b0783a72f3da78e51143be2c7fb7f2d6cd7e5510a212bd143f3c5195a
+
+Package: espeakup-udeb
+Source: espeakup
+Version: 1:0.71-13
+Installed-Size: 522
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Architecture: amd64
+Depends: libasound2-udeb (>> 1.0.25), libc6-udeb (>= 2.13), libgcc1, cdebconf-udeb, espeak-data-udeb, alsa-base-udeb, alsa-utils-udeb, libnss-files-udeb
+Description: Configure the speech synthesizer voice
+Description-md5: c49d1e4ab100733d386193935f6ba451
+Installer-Menu-Item: 1050
+Section: debian-installer
+Priority: extra
+Filename: pool/main/e/espeakup/espeakup-udeb_0.71-13_amd64.udeb
+Size: 204534
+MD5sum: bde5e7afb774626a733a99fb9dfb4d23
+SHA1: 4cd3d04e8a29cd3ef56854fbecb724a1805392b5
+SHA256: e19e131446871d9cc1286c19d7036b49f908307dda50aa2ff1fe3b9c2b0a3758
+
+Package: finish-install
+Version: 2.41wheezy1
+Installed-Size: 99
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, archdetect, installed-base, created-fstab, bootable-system
+Description: Finish the installation and reboot
+Description-md5: 448032834fa2f6f30dae6dc16a4da17d
+Installer-Menu-Item: 7800
+Section: debian-installer
+Priority: required
+Filename: pool/main/f/finish-install/finish-install_2.41wheezy1_all.udeb
+Size: 24868
+MD5sum: 6c506835337265259d009c1d7d5c51b8
+SHA1: 6af4d5cd905407f308d54f44eb834692ba0ebf62
+SHA256: bf2d3898770cd783f6086c20e63f8789e02c9dbe94a20c92c9fe1ed816c3ac2d
+
+Package: fonts-farsiweb-udeb
+Source: fonts-farsiweb
+Version: 0.4.dfsg-11
+Installed-Size: 150
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Provides: ttf-installer
+Description: Farsiweb TrueType fonts for the graphical installer
+Description-md5: 6ec9020e6d1dafa93741d003d4cb053a
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-farsiweb/fonts-farsiweb-udeb_0.4.dfsg-11_all.udeb
+Size: 67390
+MD5sum: 140e670d90c6ebd7f0776459dbdaab2a
+SHA1: f4341e5893544c98fff89be5c43de9eed8dbe891
+SHA256: 0577f182ca24a113838d7c25afbba4ab04e5948288e0f212f9e8506e14643f3a
+
+Package: fonts-freefont-udeb
+Source: fonts-freefont
+Version: 20120503-1
+Installed-Size: 931
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Provides: ttf-installer
+Description: Freefont Sans fonts for the graphical installer
+Description-md5: 2dfb9e7f479f5e791d3a45f4400ccdf6
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-freefont/fonts-freefont-udeb_20120503-1_all.udeb
+Size: 383222
+MD5sum: b6ea1dd7cf9a014b809214e249575453
+SHA1: b2c50d159fc4ca9d641f44f8a81bcca316601bc7
+SHA256: d709aadc16f1dbb5f8e22a378aa3dcb6d7b8ec5bf8775a7270cfbd9523b59975
+
+Package: fonts-knda-udeb
+Source: fonts-gubbi
+Version: 1.0-3
+Installed-Size: 150
+Maintainer: Debian-IN Team <debian-in-workers@lists.alioth.debian.org>
+Architecture: all
+Replaces: ttf-kannada-fonts-udeb
+Breaks: ttf-kannada-fonts-udeb
+Description: Free fonts for Kannada language (udeb)
+Description-md5: 4a4e0a4443f4f77223b3bfd2e1b38850
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-gubbi/fonts-knda-udeb_1.0-3_all.udeb
+Size: 50864
+MD5sum: aa55f361c96cd50be3fed141c4b4fa20
+SHA1: dca7ac39d10ae77776f8acaf5766f6ab831f7caa
+SHA256: f7957f092ff3488d50feeb28409195baf00a77836830eb3b5e6b703aa411667a
+
+Package: fonts-khmeros-udeb
+Source: fonts-khmeros
+Version: 5.0-5
+Installed-Size: 288
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Provides: fonts-installer
+Description: Debian-Installer font for the Khmer language of Cambodia
+Description-md5: f250c5284d46df2ca0dcf07e790a48c4
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-khmeros/fonts-khmeros-udeb_5.0-5_all.udeb
+Size: 107794
+MD5sum: f4a13bc8b4cc37e92cbd98fe73264411
+SHA1: 45036f9437b290c5a2e16eed52a094dc6ae6bc0e
+SHA256: 0f193c740b6b304547ef5d42adc41cbc9fb2ff41ee5cadd68d260caee165ddac
+
+Package: fonts-lao-udeb
+Source: fonts-lao
+Version: 0.0.20060226-8
+Installed-Size: 119
+Maintainer: Christian Perrier <bubulle@debian.org>
+Architecture: all
+Description: TrueType font for Lao language
+Description-md5: 831e4c2ab8a03e6359067134145160a5
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-lao/fonts-lao-udeb_0.0.20060226-8_all.udeb
+Size: 51686
+MD5sum: 07eac174570433eab076f0d42d8db3eb
+SHA1: 28cf6fd11988423026970d6c54d398eae15124ae
+SHA256: 15fc63e3360754860ff4842f34662f191fd22f50c7b5c7baf35ad9034b810ea1
+
+Package: fonts-lklug-sinhala-udeb
+Source: fonts-lklug-sinhala
+Version: 0.6-2
+Installed-Size: 328
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Description: Unicode Sinhala font by Lanka Linux User Group
+Description-md5: 05a8ddb4e7d38fe42e2f2718b23671a8
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-lklug-sinhala/fonts-lklug-sinhala-udeb_0.6-2_all.udeb
+Size: 100532
+MD5sum: 29b958e11d4462bff55eb1fe28139d1d
+SHA1: c7ca7f1d491ef490b79f0d0986fb5209b5a63041
+SHA256: 3afada399d6493d177b8a08bd3759743e022e6f8b9179aeec4e2712503ebe704
+
+Package: fonts-telu-udeb
+Source: fonts-lohit-telu
+Version: 2.5.1-2
+Installed-Size: 195
+Maintainer: Debian-IN Team <debian-in-workers@lists.alioth.debian.org>
+Architecture: all
+Description: Free fonts for Telugu script (udeb)
+Description-md5: 9d0659e34721ca85926cffe0acf3e127
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-lohit-telu/fonts-telu-udeb_2.5.1-2_all.udeb
+Size: 47284
+MD5sum: ede2726669b04239b527582ff68f00d8
+SHA1: e7409cba718efee181eb058b5652d7ba0fe09662
+SHA256: f7476bf43a40c248fe5b28deb467c491e87a05938d33b2fee3a04fd5bb33e1dc
+
+Package: fonts-taml-udeb
+Source: fonts-samyak
+Version: 1.2.2-3
+Installed-Size: 76
+Maintainer: Debian-IN Team <debian-in-workers@lists.alioth.debian.org>
+Architecture: all
+Replaces: ttf-taml-fonts-udeb
+Breaks: ttf-taml-fonts-udeb
+Description: Free TrueType fonts for Tamil language (udeb)
+Description-md5: 094298b9666dee31c6617bb6635d9e43
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-samyak/fonts-taml-udeb_1.2.2-3_all.udeb
+Size: 20652
+MD5sum: da9b3aeb41bd2c8bd41644dd04fc53bc
+SHA1: aaf24ea6c376df6a6e97af3372156bdd0ea779ef
+SHA256: c0eb802451b7f16959edf425c9a386bb26c6c954781e8af1a5de82d504839d47
+
+Package: fonts-sil-abyssinica-udeb
+Source: fonts-sil-abyssinica
+Version: 1.200-3
+Installed-Size: 508
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Provides: ttf-installer
+Description: Debian-Installer font for Ethiopian and Erythrean scripts (Amharic et al.)
+Description-md5: 13ae88981dea8afff6a8c4c1b13f0ef4
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-sil-abyssinica/fonts-sil-abyssinica-udeb_1.200-3_all.udeb
+Size: 240010
+MD5sum: 30da799fe572e6e3e9b39ea1fa7638c4
+SHA1: 2bf6b82a9e9950bb88706e618c2a7275542c2a3a
+SHA256: bc0621a47ba4303a0d156aa6a45e9f01657d5db3e2b37587535cf66a9c3026c7
+
+Package: fonts-sil-padauk-udeb
+Source: fonts-sil-padauk
+Version: 2.61-4
+Installed-Size: 440
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Provides: ttf-installer
+Description: Debian-Installer font for the Burmese language
+Description-md5: 636173f20c1687d70a21976028437573
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-sil-padauk/fonts-sil-padauk-udeb_2.61-4_all.udeb
+Size: 131768
+MD5sum: 486e73b3ac9026920b261975ee721a12
+SHA1: 5662934d8237b58b5a25079974d5f5520e51a6d0
+SHA256: 9b6fa41380177ddadcb508e5e06eb3a815dcd0bcadd18c2aa4eea8b51e008f68
+
+Package: fonts-sil-scheherazade-udeb
+Source: fonts-sil-scheherazade
+Version: 1.001-8
+Installed-Size: 283
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Provides: ttf-installer
+Description: Scheherazade font for the graphical installer
+Description-md5: f39845d231bdfcc2789c54a1ffa43b17
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-sil-scheherazade/fonts-sil-scheherazade-udeb_1.001-8_all.udeb
+Size: 116920
+MD5sum: be490cf818058af07c5e18d8953df1c8
+SHA1: bc039e293d3d0421197a066c3bf2a872d2354af6
+SHA256: 1b2045deb7edaf841997d4cc21b9fad0ef566791d64da0098c3ee0ed2db80e5c
+
+Package: fonts-mlym-udeb
+Source: fonts-smc
+Version: 5.0.1-2
+Installed-Size: 660
+Maintainer: Debian-IN Team <debian-in-workers@lists.alioth.debian.org>
+Architecture: all
+Replaces: ttf-malayalam-fonts-udeb
+Breaks: ttf-malayalam-fonts-udeb
+Description: Free fonts for Malayalam language (udeb)
+Description-md5: b2f08619cb59b4511944bea11d771ab4
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-smc/fonts-mlym-udeb_5.0.1-2_all.udeb
+Size: 259428
+MD5sum: bb4aaaf59a1630b7e64203cac8aa8402
+SHA1: aaf61117bb9a32591f796cde95239c4aad5804e3
+SHA256: 6f1736da2246c74fc210e7f05c8d74d7064032b00ccc2e03dcdaf6abbf6b8f32
+
+Package: fonts-tibetan-machine-udeb
+Source: fonts-tibetan-machine
+Version: 1.901b-4
+Installed-Size: 1436
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Provides: ttf-installer
+Description: font for Tibetan, Dzongkha and Ladakhi (OpenType Unicode)
+Description-md5: b0237d873bee7a184828fa3a2e3460f1
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-tibetan-machine/fonts-tibetan-machine-udeb_1.901b-4_all.udeb
+Size: 569632
+MD5sum: 6040c99315b83e410c1b8f1a6447d457
+SHA1: a28b574c24dcb69ca87efe7ad27e5fe4f97117a3
+SHA256: 1101a09a307c903025a56bce602bfd188659868c714cb5fd7cd4a20e473a4f6a
+
+Package: fonts-thai-tlwg-udeb
+Source: fonts-tlwg
+Version: 1:0.5.0-5
+Installed-Size: 272
+Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
+Architecture: all
+Description: Thai fonts in TrueType format for D-I use
+Description-md5: a0351517e7840094a2e045d273138678
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-tlwg/fonts-thai-tlwg-udeb_0.5.0-5_all.udeb
+Size: 110054
+MD5sum: e0ac75b131a3cbb8e0d75235a4805e46
+SHA1: 894dbbd9650a9535894e38b2e1012be1943c806f
+SHA256: 2a39fb7d3d9b805f04c65d82de4b91a89485596fd58d522ec5cae7ef198ed66c
+
+Package: fonts-ukij-uyghur-udeb
+Source: fonts-ukij-uyghur
+Version: 20110217-2
+Installed-Size: 464
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Description: uyghur font for the graphical installer (UKIJEkran)
+Description-md5: a55e4a2c979eaeb65aec8ee55147e712
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fonts-ukij-uyghur/fonts-ukij-uyghur-udeb_20110217-2_all.udeb
+Size: 214192
+MD5sum: 05fc227640094538bebefa960acd767e
+SHA1: 2ef89c19b62db70eb1f14521b1c52ebca7d847a7
+SHA256: 81cfb8688dbfe6d36504eacb3ca1a93d7d69347839dc6cae3d84ddb5236ecbd5
+
+Package: fuse-udeb
+Source: fuse
+Version: 2.9.0-2+deb7u1
+Installed-Size: 57
+Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libfuse2-udeb (= 2.9.0-2+deb7u1)
+Description: Filesystem in Userspace
+Description-md5: e62f7c382c41b96328cd40dc8bd03c76
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fuse/fuse-udeb_2.9.0-2+deb7u1_amd64.udeb
+Size: 14578
+MD5sum: 43338a12c2442a30d4d0fdc2f2a1aeb7
+SHA1: 0b4a73afb8ff3b951c3cf220a469b3fce2534310
+SHA256: 21515444a276dd02d6171b5e3965ca85444b00cf8023e6fe3a0249d82247856c
+
+Package: libfuse2-udeb
+Source: fuse
+Version: 2.9.0-2+deb7u1
+Installed-Size: 270
+Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: Filesystem in Userspace (library)
+Description-md5: 4820771d8ec229e2c1bcfbc3b8043fb4
+Section: debian-installer
+Priority: optional
+Filename: pool/main/f/fuse/libfuse2-udeb_2.9.0-2+deb7u1_amd64.udeb
+Size: 65432
+MD5sum: 7160df2cec46fe3951dc5ea2f9ba0724
+SHA1: c617c4aa295304ab463f40e5f81846e92144a066
+SHA256: 3e4429605a7f757a956161b2be1ebe105e0a44b195e1a098b0329f4088ac005c
+
+Package: libgdk-pixbuf2.0-0-udeb
+Source: gdk-pixbuf
+Version: 2.26.1-1
+Installed-Size: 3264
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libglib2.0-udeb (>= 2.32.0), libpng12-0-udeb (>= 1.2.13-4), libx11-6-udeb
+Description: GDK Pixbuf library - minimal runtime
+Description-md5: f37b1ce45c3e5889b30092e7ddcab580
+Section: debian-installer
+Priority: extra
+Filename: pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0-udeb_2.26.1-1_amd64.udeb
+Size: 588462
+MD5sum: 909c09ddb01ec2c067a92f7691f984f0
+SHA1: 19d4f564d70a5dce126f1c61a46a1e3893d0694d
+SHA256: d772dbe3bb4292d1044fce964dea40c3714a8ea6d0014bfa9317b580ba361125
+
+Package: gnupg-udeb
+Source: gnupg
+Version: 1.4.12-7+deb7u4
+Installed-Size: 829
+Maintainer: Debian GnuPG-Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libusb-0.1-udeb, zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: GNU privacy guard - a free PGP replacement
+Description-md5: 0d5b74cda45e2a6526c6943d2cd0c362
+Section: debian-installer
+Priority: extra
+Filename: pool/main/g/gnupg/gnupg-udeb_1.4.12-7+deb7u4_amd64.udeb
+Size: 352888
+MD5sum: c4773c274790971679bf9473ad76b14b
+SHA1: 78e8ea13ff478adda308b9322b47b74454ae106b
+SHA256: 88386a304eaa9666f361f942bba33f0b7854cf07f711f6e7f0b008136489fcef
+
+Package: gpgv-udeb
+Source: gnupg
+Version: 1.4.12-7+deb7u4
+Installed-Size: 299
+Maintainer: Debian GnuPG-Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: minimal signature verification tool
+Description-md5: c52656f4cc79fd4b089086b9173d2923
+Section: debian-installer
+Priority: extra
+Filename: pool/main/g/gnupg/gpgv-udeb_1.4.12-7+deb7u4_amd64.udeb
+Size: 129738
+MD5sum: e05b2bfcd7fedb7442de65f59237db73
+SHA1: 2c85fc453625c7091a06a31a2afbe6639eff7a92
+SHA256: 13c4f31f5036e83c906dab5f116366452f8d6ceff47c1d2c64b3999c0411439e
+
+Package: grub-installer
+Version: 1.85
+Installed-Size: 626
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: bootable-system
+Depends: cdebconf-udeb, kernel-installer, created-fstab, di-utils (>= 1.15), di-utils-mapdevfs, os-prober, partman-utils
+Description: Install GRUB on a hard disk
+Description-md5: 4bee95e5a7fe68b1b6922dec90605420
+Installer-Menu-Item: 7400
+Section: debian-installer
+Priority: standard
+Filename: pool/main/g/grub-installer/grub-installer_1.85_amd64.udeb
+Size: 206276
+MD5sum: 55103f8070b11407cc899e6599744c33
+SHA1: f998113d4afb0dd70761356d3e8e2fb825610cc5
+SHA256: 72bab6315ecd02196d69834bf1320614ffc14df5763e73eac0efaddb6ec8eac7
+
+Package: grub-mount-udeb
+Source: grub2
+Version: 1.99-27+deb7u2
+Installed-Size: 665
+Maintainer: GRUB Maintainers <pkg-grub-devel@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdevmapper1.02.1-udeb (>= 2:1.02.74), libfuse2-udeb (>= 2.8.1)
+Description: export GRUB filesystems using FUSE
+Description-md5: ceb7f9c6d531cf741f38858040de30e1
+Section: debian-installer
+Priority: extra
+Filename: pool/main/g/grub2/grub-mount-udeb_1.99-27+deb7u2_amd64.udeb
+Size: 172398
+MD5sum: 62dc13a2267851e5fdd424a0afde9969
+SHA1: 9e554568d5e2e1e8cf6ae9671cf412e6110c71de
+SHA256: 673ac3f48f8e00f6ed173d8dbf0a86a8cfd2b8eb7555bb18eea2e4fe81363129
+
+Package: libgtk2.0-0-udeb
+Source: gtk+2.0
+Version: 2.24.10-2
+Installed-Size: 5070
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Provides: gtk2.0-binver-2.10.0
+Depends: fontconfig-udeb (>= 2.9.0), libatk1.0-udeb (>= 2.4.0), libc6-udeb (>= 2.13), libcairo2-udeb (>= 1.12.0), libfreetype6-udeb (>= 2.4.0), libgdk-pixbuf2.0-0-udeb (>= 2.26.1), libglib2.0-udeb (>= 2.32.3), libpango1.0-udeb (>= 1.29.4), libx11-6-udeb (>= 2:1.4.99.1), libxcursor1-udeb (>> 1.1.2), libxext6-udeb (>= 2:1.3.0), libxi6-udeb (>= 2:1.5.99.2), libxinerama1-udeb, libxrender1-udeb
+Description: GTK+ graphical user interface library - minimal runtime
+Description-md5: 32e5112b80c02578837cff4f65dfec84
+Section: debian-installer
+Priority: extra
+Filename: pool/main/g/gtk+2.0/libgtk2.0-0-udeb_2.24.10-2_amd64.udeb
+Size: 1659468
+MD5sum: f082de567af6e6d9f3d24bce7024fd22
+SHA1: d1903b5a44e6781845ab1923cd838702eb3b312b
+SHA256: 553632613007fc526c12c19bc32156ce1cf7a9baa8a2c2c5235d07c852b2bb42
+
+Package: libgtk-3-0-udeb
+Source: gtk+3.0
+Version: 3.4.2-7
+Installed-Size: 5165
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Provides: gtk3-binver-3.0.0
+Depends: fontconfig-udeb (>= 2.9.0), libatk1.0-udeb (>= 2.4.0), libc6-udeb (>= 2.13), libcairo-gobject2 (>= 1.10.0), libcairo2-udeb (>= 1.12.0), libfreetype6-udeb (>= 2.4.0), libgdk-pixbuf2.0-0-udeb (>= 2.26.1), libglib2.0-udeb (>= 2.32.3), libpango1.0-udeb (>= 1.29.4), libx11-6-udeb (>= 2:1.4.99.1), libxcursor1-udeb (>> 1.1.2), libxext6-udeb (>= 2:1.3.0), libxi6-udeb (>= 2:1.5.99.2), libxinerama1-udeb
+Description: GTK+ graphical user interface library - minimal runtime
+Description-md5: 32e5112b80c02578837cff4f65dfec84
+Section: debian-installer
+Priority: extra
+Filename: pool/main/g/gtk+3.0/libgtk-3-0-udeb_3.4.2-7_amd64.udeb
+Size: 1669520
+MD5sum: 79a9c7d85b2c666bed8f659786e90725
+SHA1: b24b870f62b711cd5c232c118b280da64823069f
+SHA256: 692910025c83eff71a95925463f769c73649c2b0948c6b9f5098b6da01d5b8e3
+
+Package: disk-detect
+Source: hw-detect
+Version: 1.92
+Installed-Size: 73
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: harddrive-detection
+Depends: cdebconf-udeb (>= 0.38), hw-detect, di-utils (>= 1.13), pciutils-udeb
+Enhances: hw-detect
+Description: Detect disk drives
+Description-md5: da3b08412fa8497e43b1366be1a9f766
+Installer-Menu-Item: 3500
+Section: debian-installer
+Priority: optional
+Filename: pool/main/h/hw-detect/disk-detect_1.92_all.udeb
+Size: 23902
+MD5sum: e2835d9dd987e3afab7a55f2344013af
+SHA1: fa39af05df7a3e45ac31d8a0a08f52531129cad4
+SHA256: e16306b753fce56f536d2f7120e202be6a02657738adaa32b2c202a0cf6b9189
+
+Package: driver-injection-disk-detect
+Source: hw-detect
+Version: 1.92
+Installed-Size: 44
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb (>= 0.38), hw-detect, mountmedia
+Enhances: hw-detect
+Description: Detect OEM driver injection disks
+Description-md5: f270ea4d712779cbe980f1e32a76f391
+Installer-Menu-Item: 1500
+Section: debian-installer
+Priority: optional
+Filename: pool/main/h/hw-detect/driver-injection-disk-detect_1.92_all.udeb
+Size: 13274
+MD5sum: 135ea82498641987c094121433733d29
+SHA1: 0117fa3e13f928ab63637fb3c0053137d65fde10
+SHA256: 1504a7183f83bdae94b1a8d7068707488c55e8337e195e37bbeddb26aaf1a244
+
+Package: ethdetect
+Source: hw-detect
+Version: 1.92
+Installed-Size: 104
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: ethernet-card-detection
+Depends: rootskel (>= 1.30), cdebconf-udeb (>= 0.38), hw-detect, di-utils (>= 1.13), pciutils-udeb
+Description: Detect network hardware and load kernel drivers for it
+Description-md5: fd60c7fdc5fe6c30e23129a39dfab5f4
+Installer-Menu-Item: 1700
+Section: debian-installer
+Priority: optional
+Filename: pool/main/h/hw-detect/ethdetect_1.92_all.udeb
+Size: 30564
+MD5sum: cba6c2a33bef3f61af56c8cb48ecd362
+SHA1: 45d59086d51427e24eb035348a0f1774571d7cdf
+SHA256: bff7b042a5974939b9b33af61f01145e0e5fc3e9d41aff83c44fa5979acd8514
+
+Package: save-logs
+Source: installation-report
+Version: 2.49
+Installed-Size: 208
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb
+Description: save logs and configuration for debug purposes
+Description-md5: 71de99cdb802952ac30d22605a442912
+Installer-Menu-Item: 94000
+Section: debian-installer
+Priority: standard
+Filename: pool/main/i/installation-report/save-logs_2.49_all.udeb
+Size: 58418
+MD5sum: b5ea264ae2842456e92d23b62ab41d19
+SHA1: 84db50ce3e21cbccf525f8401cc7279ceee326c1
+SHA256: e22b93a27a78bb5c1a2c1e0ffc9643e2bc2186bb14ade10a9cabafc29c7daab6
+
+Package: isc-dhcp-client-udeb
+Source: isc-dhcp
+Version: 4.2.2.dfsg.1-5+deb70u6
+Installed-Size: 1637
+Maintainer: Debian ISC DHCP maintainers <pkg-dhcp-devel@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: ISC DHCP Client for debian-installer
+Description-md5: 3f2b7f6ba22e121f0d197bb60b9a771d
+Section: debian-installer
+Priority: extra
+Filename: pool/main/i/isc-dhcp/isc-dhcp-client-udeb_4.2.2.dfsg.1-5+deb70u6_amd64.udeb
+Size: 600516
+MD5sum: 93361fb143527b15e699d5933472450c
+SHA1: a15258c8f2fc26f42a3f93bf0dd9e7041ecd31b0
+SHA256: e5a095042f3e61d0d437130e0d1f3630af40e34d7f8fdbaa1a7963dd45525664
+
+Package: jfsutils-udeb
+Source: jfsutils
+Version: 1.1.15-2
+Installed-Size: 985
+Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libuuid1-udeb (>= 2.16)
+Description: A stripped-down version of jfsutils, for debian-installer
+Description-md5: 4c99e8cbedbcda3e3342e726fe297d14
+Section: debian-installer
+Priority: optional
+Filename: pool/main/j/jfsutils/jfsutils-udeb_1.1.15-2_amd64.udeb
+Size: 252928
+MD5sum: 67bf24a3423ff33b2d1737068ba75e72
+SHA1: 9c95f6a291ad49e16b2c998d69ac391a843abc48
+SHA256: e71adc1c4cc03649765c64b5ea7cb18d9fbe5610aa99e2a8a18bc272f779155a
+
+Package: kexec-tools-udeb
+Source: kexec-tools
+Version: 1:2.0.3-1+deb7u1
+Installed-Size: 196
+Maintainer: Khalid Aziz <khalid@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: tools to support fast kexec reboots (udeb)
+Description-md5: dcf24e43dd0b72a40ef017df07bbb2ff
+Section: debian-installer
+Priority: optional
+Filename: pool/main/k/kexec-tools/kexec-tools-udeb_2.0.3-1+deb7u1_amd64.udeb
+Size: 52012
+MD5sum: d244560fd7290fd5276453243ad9b5c7
+SHA1: 4ba1991ce8bc2ac56d25817056aa3af27cab7b2c
+SHA256: ed4c0840daddae6f6046527e97161297581403916bdf70a2732cb80318173854
+
+Package: initrd-kickseed
+Source: kickseed
+Version: 0.58
+Installed-Size: 34
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, kickseed-common, preseed-common, di-utils (>= 1.15)
+Description: Load Kickstart file from the initrd
+Description-md5: 16995070999f85ab58426d16521e67b0
+Section: debian-installer
+Priority: optional
+Filename: pool/main/k/kickseed/initrd-kickseed_0.58_all.udeb
+Size: 4086
+MD5sum: d6b16546f7b4cb94d98424b5ad9a47f2
+SHA1: 3f2024a039622225fe58851b271b1ceb4c396480
+SHA256: 936ca46478075309895065710e13365c473249b395db177854aebc8c4b82022d
+
+Package: kickseed-common
+Source: kickseed
+Version: 0.58
+Installed-Size: 82
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: di-utils (>= 1.20)
+Description: Common files for Kickstart compatibility
+Description-md5: 227f04c0217d21b93e39c8de132f4e63
+Section: debian-installer
+Priority: standard
+Filename: pool/main/k/kickseed/kickseed-common_0.58_all.udeb
+Size: 10966
+MD5sum: fa4e6248844d92f4510635893fe0b3a3
+SHA1: ff536a8e3150cfed83b6fb8c20804111e9287279
+SHA256: 81855b9be3c98ee5018a122fd8cd07e8651355d5582decc978210dbee6e27a20
+
+Package: klibc-utils-floppy-udeb
+Source: klibc
+Version: 2.0.1-3.1
+Installed-Size: 74
+Maintainer: maximilian attems <maks@debian.org>
+Architecture: amd64
+Depends: libklibc-udeb (= 2.0.1-3.1)
+Description: small utilities built with klibc for the boot floppy
+Description-md5: 0ad22dfdd5dbfe87f0c7b0a41548909b
+Section: debian-installer
+Priority: optional
+Filename: pool/main/k/klibc/klibc-utils-floppy-udeb_2.0.1-3.1_amd64.udeb
+Size: 23812
+MD5sum: f579ff08d067275b7d362e6d3a829797
+SHA1: bc3fb81dd6f61e7ec1056823cb8b225c3dd68968
+SHA256: b96ba68ae42261131b865122db809bd5109fa68e75f2428c7c49e1cf708668de
+
+Package: libkmod2-udeb
+Source: kmod
+Version: 9-3
+Installed-Size: 107
+Maintainer: Marco d'Itri <md@linux.it>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: libkmod shared library
+Description-md5: 1dedae666a042dc647b1d940a726842c
+Section: debian-installer
+Priority: important
+Filename: pool/main/k/kmod/libkmod2-udeb_9-3_amd64.udeb
+Size: 45024
+MD5sum: 4acd81fbbe98beb26e73146349c6b78d
+SHA1: 2f7fa9a5cd22ed35eebdc2806a2364cdbeb02a24
+SHA256: 377009df925348e36f3e775ece1567d39f87bbe88213a19a0ffa5d51219e7315
+
+Package: libaio1-udeb
+Source: libaio
+Version: 0.3.109-3
+Installed-Size: 22
+Maintainer: Guillem Jover <guillem@debian.org>
+Architecture: amd64
+Description: Linux kernel AIO access library - shared library
+Description-md5: 157af2c75c8ea8af75b168f50ebe9f96
+Section: debian-installer
+Priority: optional
+Filename: pool/main/liba/libaio/libaio1-udeb_0.3.109-3_amd64.udeb
+Size: 2216
+MD5sum: 3c0cf30ee5aa84d9d831a09277d653ee
+SHA1: c3e3c4bdc456e68eb2e01b56b4e63a51ba53f06d
+SHA256: 4bbf1c2f607074a126cb57c51c58889a1bfab86bdded96d3ce6ebceab963b591
+
+Package: libbsd0-udeb
+Source: libbsd
+Version: 0.4.2-1
+Installed-Size: 67
+Maintainer: Debian GNU/kFreeBSD <debian-bsd@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: utility functions from BSD systems - shared library
+Description-md5: 6341cc74d71c795b192431f79c0bc778
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libb/libbsd/libbsd0-udeb_0.4.2-1_amd64.udeb
+Size: 22954
+MD5sum: 29503aa8b28d61f46fbbf672ebaf13e4
+SHA1: f14d7c06e204d9e5152b20304c92370eefaf7c90
+SHA256: 2d0885bd479582213e7b59d431a3a9088799f4fb96c994714d8cd8894aec740e
+
+Package: libfakekey0-udeb
+Source: libfakekey
+Version: 0.1-7
+Installed-Size: 30
+Maintainer: Moray Allan <moray@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libx11-6-udeb (>= 2:1.4.99.1), libxtst6-udeb
+Description: library for converting characters to X key-presses [runtime]
+Description-md5: 343ede5e6bb088cceafc9c5c5c570476
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libf/libfakekey/libfakekey0-udeb_0.1-7_amd64.udeb
+Size: 3786
+MD5sum: 7f4b4a72f307893f1a75137a30368425
+SHA1: cd05fed5e8e19bad5efd530c0e26762e4d41ccd4
+SHA256: 925415638cd2dbf851b2e17e723143815e750c21fc5d1ea2bdd19a0c9f6af0da
+
+Package: libffi5-udeb
+Source: libffi
+Version: 3.0.10-3
+Installed-Size: 67
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: Foreign Function Interface library runtime
+Description-md5: aa11fa9e12227fc9a1de7b2cb193c270
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libf/libffi/libffi5-udeb_3.0.10-3_amd64.udeb
+Size: 20106
+MD5sum: 2fa5449c74762f085b7b0c11d7fdd608
+SHA1: c2d870698d3af51c9c4fa579f8c8882f03e9ea9f
+SHA256: 1a72e016f38929d4be4a0098aebe129e55bd87ecaf1c56e21698f3225ae71f24
+
+Package: libgcrypt11-udeb
+Source: libgcrypt11
+Version: 1.5.0-5+deb7u1
+Installed-Size: 505
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libgpg-error0-udeb (>= 1.10)
+Description: LGPL Crypto library - runtime library
+Description-md5: 6cb6e549d7896e8d87a0813312b20500
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libg/libgcrypt11/libgcrypt11-udeb_1.5.0-5+deb7u1_amd64.udeb
+Size: 212416
+MD5sum: 9010bd3336df35bc3f81c90e13ce98d7
+SHA1: 032899f812d3ed4e1e338382fa1b8fedd23e948b
+SHA256: 78db684966ee580e6ee051518949c4d448776ee5b7bbfce415d8094e2946cd7a
+
+Package: libgpg-error0-udeb
+Source: libgpg-error
+Version: 1.10-3.1
+Installed-Size: 26
+Maintainer: Jose Carlos Garcia Sogo <jsogo@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: library for common error values and messages in GnuPG components
+Description-md5: 69f556e12b915238b7c815f26da80be5
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libg/libgpg-error/libgpg-error0-udeb_1.10-3.1_amd64.udeb
+Size: 5646
+MD5sum: 044202137496cba72db6e3159acb3524
+SHA1: 26b5cafe6d3cc6d17c326bb2f9ec5e66f1f9f859
+SHA256: 136a3415ba6b4566521b04105dbfb63809dd5d782b2a8cc790f8489cb6ecad99
+
+Package: libnl-3-200-udeb
+Source: libnl3
+Version: 3.2.7-4
+Installed-Size: 116
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: library for dealing with netlink sockets
+Description-md5: 6e0d98ffbaa2544fb1d2efed8c1ce624
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libn/libnl3/libnl-3-200-udeb_3.2.7-4_amd64.udeb
+Size: 35846
+MD5sum: 65cc001466581f79704e4e3a5212124d
+SHA1: 9d6ecea811bd4399568d01331449b7dd5707248d
+SHA256: c8111fc3970dd3d937509126fee36ae634b7efce08901d6201bce99bb6440dab
+
+Package: libnl-genl-3-200-udeb
+Source: libnl3
+Version: 3.2.7-4
+Installed-Size: 40
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Architecture: amd64
+Depends: libnl-3-200-udeb (= 3.2.7-4), libc6-udeb (>= 2.13)
+Description: library for dealing with netlink sockets - generic netlink
+Description-md5: 4ef22e5c5ec40173d401b7dcd37560d4
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libn/libnl3/libnl-genl-3-200-udeb_3.2.7-4_amd64.udeb
+Size: 7710
+MD5sum: 2bd779215c1ffb5e358ff75ec4de5b51
+SHA1: dfc31fb04bc102caa7b17017b1d447186ecc2b5c
+SHA256: efd380652d6db824cbcbd64ec4fc7c88fe8b83c9a49a12d19526d777ba3fa6d0
+
+Package: libpthread-stubs0-udeb
+Source: libpthread-stubs
+Version: 0.3-3
+Installed-Size: 8
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Architecture: amd64
+Description: pthread stubs not provided by native libc - udeb
+Description-md5: c611de1bf7ce15358325230585662203
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libp/libpthread-stubs/libpthread-stubs0-udeb_0.3-3_amd64.udeb
+Size: 648
+MD5sum: 07f893a2534b9ce87375366a61992252
+SHA1: 4233d583ca2e844a02a7e9116121eca9b4a2dad2
+SHA256: e3f5ac79c7885864530452198ee3522f9a46dee59b6f4a5c6c86b5f83146e7d3
+
+Package: libtextwrap1-udeb
+Source: libtextwrap
+Version: 0.1-13
+Installed-Size: 9
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: text-wrapping library with i18n - runtime udeb
+Description-md5: c0d129529eb2bacc541033b77e41b62f
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libt/libtextwrap/libtextwrap1-udeb_0.1-13_amd64.udeb
+Size: 4540
+MD5sum: 20c982c45874c243c903c0a8688c7a4b
+SHA1: d5bb7b1bf43646fa5c47f980ab34deec76e31101
+SHA256: 500a432a17abbe8c547f512742a14c8bb2093f111d71734b8126b528c1165459
+
+Package: libusb-0.1-udeb
+Source: libusb
+Version: 2:0.1.12-20+nmu1
+Installed-Size: 43
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: userspace USB programming library
+Description-md5: 3fec8a0ab93f03d493921aa28a1ef329
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libu/libusb/libusb-0.1-udeb_0.1.12-20+nmu1_amd64.udeb
+Size: 12554
+MD5sum: a64daceb242d06386f57a56e00b1d5a5
+SHA1: d6ed6f2e731b62ffc538bd068127dc96c3787045
+SHA256: 2f1026c8e7c6ffdc497160403b0c52eeaa3086052904acfa5cb6569a7320eb00
+
+Package: libusb-1.0-0-udeb
+Source: libusbx
+Version: 2:1.0.11-1
+Installed-Size: 55
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: userspace USB programming library
+Description-md5: 3fec8a0ab93f03d493921aa28a1ef329
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libu/libusbx/libusb-1.0-0-udeb_1.0.11-1_amd64.udeb
+Size: 22936
+MD5sum: 95cf9aa181060efb63380a71b482fec0
+SHA1: e80bb6dc4ad00bab2a54e098d921d09a931c8755
+SHA256: 997d7b61d81097a90d61407cd458bb3bc73a828b172f2c965f6afe839484cb57
+
+Package: libxtst6-udeb
+Source: libxtst
+Version: 2:1.2.1-1+deb7u1
+Installed-Size: 38
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libx11-6-udeb (>= 2:1.4.99.1), libxext6-udeb (>= 2:1.3.0), libxi6-udeb (>= 2:1.5.99.2)
+Description: X11 Testing -- Record extension library
+Description-md5: e8a840f82fa4b61b02a5dbbd757ecd7a
+Section: debian-installer
+Priority: optional
+Filename: pool/main/libx/libxtst/libxtst6-udeb_1.2.1-1+deb7u1_amd64.udeb
+Size: 8816
+MD5sum: 3c390009dbf04c183b4916d125d47180
+SHA1: ec82b87260e191bdddfd6ac1c26bd354f5c093bd
+SHA256: 7855107f78e07c9ba4170bfd5ce44737eea3440a42610e3ae269e65e489beb25
+
+Package: lilo-installer
+Version: 1.41
+Installed-Size: 264
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: bootable-system
+Depends: cdebconf-udeb, kernel-installer, di-utils (>= 1.15), di-utils-mapdevfs, fdisk-udeb, os-prober
+Description: Install LILO on a hard disk
+Description-md5: 6bb1a25ac51fad9f1b6551083e6bca5c
+Installer-Menu-Item: 7500
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/lilo-installer/lilo-installer_1.41_amd64.udeb
+Size: 90098
+MD5sum: 5cffcc79e64453974aee7dcb81d1fcb5
+SHA1: 274ea71166afb588e5677dc2bc2089c5b50f972f
+SHA256: 1d0d12e64e8bf9f7709c07ea90dda88a3bee4c9664301a5b0263e2629f5f65aa
+
+Package: btrfs-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 800
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: btrfs-modules
+Depends: kernel-image-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di, crc-modules-3.2.0-4-amd64-di, zlib-modules-3.2.0-4-amd64-di
+Description: BTRFS filesystem support
+Description-md5: db412fa883992ae39d18a2f2f65b6882
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/btrfs-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 218966
+MD5sum: b9c5d1406d8db98753295a30a21cc990
+SHA1: 499fd7a2947d1373f49646cac011d0274534df89
+SHA256: 319024c43f08d45046f229ca11e6d1486355a61dc9c727ecdc18783a4b0d54e5
+
+Package: crc-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 21
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: crc-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: CRC modules
+Description-md5: 57ba69f71e48793336fb89700f825f08
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/crc-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 5416
+MD5sum: 93508a443b7c2906022b1480e6838791
+SHA1: f0980e98f07cf2e9c7ec47aa842d9adb3df49b95
+SHA256: fa06b3f061cc2c97d2fcbca1424853dcb4c4441d3c98aac6897feb679581c979
+
+Package: crypto-dm-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 32
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: crypto-dm-modules
+Depends: kernel-image-3.2.0-4-amd64-di, md-modules-3.2.0-4-amd64-di
+Description: devicemapper crypto module
+Description-md5: 30c139efee461475052244c541058ac6
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/crypto-dm-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 10098
+MD5sum: 218d751c8373d4acf2271dc3466f445e
+SHA1: 876651589a09b70e0e6e0f241cfa0c8713713c70
+SHA256: f33e66bcbfeab68ea6df662b3713c97f4aadd1c5cbdbe7dec6c2103856f9c71c
+
+Package: crypto-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 153
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: crypto-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: crypto modules
+Description-md5: bdd453a35e0e6fd4e0ce02db3297f9bb
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/crypto-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 42772
+MD5sum: 067cde8d2ca4e2a1f6ef273dd61de60e
+SHA1: 0d634eff9f976be9ca0d10ceff6b3eb2b3be599b
+SHA256: e34b3361e3819e4b1d803e3df59e6da663c4df4f48b861929a27f187d22e12b1
+
+Package: efi-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 27
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: efi-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: EFI modules
+Description-md5: c981f0df9a973eaae5dd4261a62781c7
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/efi-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 8282
+MD5sum: ebab01509fcb3f945e9eb6ca0e832bfe
+SHA1: 46800117b2026ab8a5aa589c9f3976279519a4e0
+SHA256: 4e504f21fd10cb4578add8918de3ea86f0974ad015c6b3e49d4bef1fcef61716
+
+Package: event-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 22
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: event-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: Event support
+Description-md5: 3f10bde6bb8fa0f46e8e8d7f7ba43fe4
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/event-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 6672
+MD5sum: 14ee28eedfc0b0d004c564f4c383a96a
+SHA1: 89b38f3fe8333ef39d34d50dd1afedb2ce98e67a
+SHA256: eeeab5a3dee795bb17dff4a9fd647acb8208e9a70c7ee9a774f55e0bbe7771e9
+
+Package: ext2-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 102
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: ext2-modules
+Depends: kernel-image-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di
+Description: EXT2 filesystem support
+Description-md5: 6b0a9989e380df3a0c75975d6056a51c
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/ext2-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 31390
+MD5sum: df4f6402d19c7feb9b0afc45d4e1b782
+SHA1: 833c5cc792b97aeef5a502372e12992bafec2778
+SHA256: ae8e5f301019ade9b702a517fd4e9cb7cb64be15318d74203d39cfb5b4adcbac
+
+Package: ext3-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 410
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: ext3-modules
+Depends: kernel-image-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di
+Description: EXT3 filesystem support
+Description-md5: 9f5c7d2809bfb61bb7500b10d9df6d88
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/ext3-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 93586
+MD5sum: fe1dfa20ae4512a5df37517727802260
+SHA1: 1ac5e773560ae4b9d983e79b9d0ab98b8321b439
+SHA256: 6dfb01007239236d136be0bb9e3b64374e2693909857cd58fd01bf263e9c9324
+
+Package: ext4-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 747
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: ext4-modules
+Depends: kernel-image-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di
+Description: EXT4 filesystem support
+Description-md5: 8040891c1370c5d8b708759ce31f3331
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/ext4-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 171750
+MD5sum: f28035a0d113a6650bafe1f5b186c014
+SHA1: 0b7d33de1bf581210ecb5e7f3bdfed15bb9414b2
+SHA256: 299a3a94fb6cb86ae9e68fdecb4f52b3d817ff0ca56b1088d8995e404e908323
+
+Package: firewire-core-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 160
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: firewire-core-modules
+Depends: kernel-image-3.2.0-4-amd64-di, scsi-core-modules-3.2.0-4-amd64-di, crc-modules-3.2.0-4-amd64-di
+Description: Core FireWire drivers
+Description-md5: b79fa575556aeae2b086450e411482dd
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/firewire-core-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 47476
+MD5sum: 2f86c4aeff2cb62077293317d139d8be
+SHA1: 204fa586af7b521af730fbbaae2f5b6080b01d82
+SHA256: 63d6a4ce0ce15f4cd5d744683e14c4a7e62c5533849ece77bb922734ef1cfb85
+
+Package: floppy-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 110
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: floppy-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: Floppy driver
+Description-md5: b39e122a0550960e42ce471327efdd22
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/floppy-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 28444
+MD5sum: 41f12daae30bf28e75b1210203677e3b
+SHA1: cf7df39adf05e21414a2f2192333661581faf2c9
+SHA256: 437c2557428db95fe4d87cfa7f9813b556ca628fb484b33dbd21b5e30c0888c9
+
+Package: fuse-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 111
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: fuse-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: FUSE modules
+Description-md5: f2eb4040bfb9ba089590280461c01c17
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/fuse-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 32320
+MD5sum: 7b9c770b40fae5fd1eb6039670e643fe
+SHA1: b3737ff09a1e0fd6dedda599e5a2790f5c37508f
+SHA256: 5c2a7a5b68f16fadaf530c05c4ea615de408eb030bc81a27f946e686c453782f
+
+Package: hyperv-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 123
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: hyperv-modules
+Depends: kernel-image-3.2.0-4-amd64-di, input-modules-3.2.0-4-amd64-di, scsi-core-modules-3.2.0-4-amd64-di
+Description: Hyper-V modules
+Description-md5: 47d1d496879f0c9fcb3eaaf0ec8d3791
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/hyperv-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 30402
+MD5sum: 6ea0976231414734e71c86be2d3c8f84
+SHA1: fb602a617475f05f2b7c2e740d683e7ebe9f9f7a
+SHA256: 03c8ecbb0d6679999cda92e7caaadce8682259c25510922c3fbaa2a539d7caf9
+
+Package: i2c-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 47
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: i2c-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: i2c support modules
+Description-md5: af6478f0370ad44854419cbcf247b1cd
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/i2c-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 11734
+MD5sum: 0bd80978d860edf707f1de91e7753105
+SHA1: 234ee2a7b00cf88ab27e7af07ae0ad2b5464e438
+SHA256: d0feff12fafcd55f37657e071120edf42f522cc21bec3d0e94f3e89766281a90
+
+Package: irda-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 458
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: irda-modules
+Depends: kernel-image-3.2.0-4-amd64-di, ppp-modules-3.2.0-4-amd64-di, usb-modules-3.2.0-4-amd64-di
+Description: Infrared devices support
+Description-md5: 8d1f69d8162c59b5ed13fdd3012588fd
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/irda-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 100504
+MD5sum: 1f1c7a6bfec6d06314ffe00ec5cbce5f
+SHA1: d958402fc583d1f9d5fc4b9e3e3846c41e5a4465
+SHA256: d9c2e7ac68492ffba074ae739714bf90963fb79e7de399f7056a5e970024b1cf
+
+Package: jfs-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 223
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: jfs-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: JFS filesystem support
+Description-md5: ba8f53503cba3c38d1b740ee61487cad
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/jfs-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 72842
+MD5sum: 4cafaa7c9055ca2a463dfa87ce0eda40
+SHA1: c4cb9c1f6ca47fc10abae000ed39d2a92d721ced
+SHA256: 1461c0cea2e111341fb31944e5b9c33e94a153a4c3266095d997995b54587293
+
+Package: loop-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 36
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: loop-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: Loopback filesystem support
+Description-md5: 2e8648333ddd5c6927f3724c9f1413e6
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/loop-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 10982
+MD5sum: d49047e912e5cd77a8aa0e7a0ff0474a
+SHA1: aa58077fcb9bc2932b966c22ac42e07aef836b7c
+SHA256: fda917948da2fc5858563a3abe20d0d3812e4b2ee87f269a557d163fc81e47d6
+
+Package: md-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 747
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: md-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: RAID and LVM support
+Description-md5: be04a8600706ec5d995ac31a1ed68610
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/md-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 226110
+MD5sum: 132d1fa9a1d4d3b825a9ee104a034f6f
+SHA1: c489212be0ad0f8cc2e92607c2d06241fa5cc787
+SHA256: 7d764b7feb1dd60af2cc577c3f21bc0a2d6a7e4cd4b8f0bdb8b3ad63ca0843c1
+
+Package: mmc-core-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 134
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: mmc-core-modules
+Depends: kernel-image-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di
+Description: MMC/SD/SDIO core modules
+Description-md5: 4567c5864475f10a86458c0f3d1a9282
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/mmc-core-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 33970
+MD5sum: bb759308d2130c363976b73be480fe94
+SHA1: fccc9f083139edc29c9c7b159f183b51ded322d3
+SHA256: 91e52cde13ff974967bf5f2672fe6b81ef2d863b4690255e6351d16483f192ae
+
+Package: multipath-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 41
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: multipath-modules
+Depends: kernel-image-3.2.0-4-amd64-di, md-modules-3.2.0-4-amd64-di, scsi-core-modules-3.2.0-4-amd64-di
+Description: Multipath support
+Description-md5: d24fc96b4b4a9e2d2d103dac92512162
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/multipath-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 11238
+MD5sum: de8fff0dfc5c74852befddddd0e8d9d3
+SHA1: b30161d4002931559337c77ce74870923ff9bf4f
+SHA256: 6d20a443b6ff593d50412d52862cd6c88c06d34c9e3f6f2216a006b10bb54560
+
+Package: nbd-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 26
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: nbd-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: Network Block Device modules
+Description-md5: aa83e2fac630c0827f15ef98ae2bcede
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/nbd-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 7808
+MD5sum: 602cb3d32d29070c0f57fb6bc846d8cd
+SHA1: 81dd170b824554697aefa30cf35e7a7983944004
+SHA256: 8c1a2458aad5b3dd9d7aedce29302173bb04f2e4e2a17bd93e35b1a5d4d13869
+
+Package: nic-extra-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 5975
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: nic-extra-modules
+Depends: kernel-image-3.2.0-4-amd64-di, nic-shared-modules-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di, i2c-modules-3.2.0-4-amd64-di, crc-modules-3.2.0-4-amd64-di
+Description: Rare NIC drivers
+Description-md5: 4a4743541d07ea39c2efe2d95590e99a
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/nic-extra-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 1479352
+MD5sum: ca8226f806c22d2d6ad387fc973415c6
+SHA1: 4dd6f1c81e9a7216ab9e929e783f95f49a98b14c
+SHA256: ec2621670b5f56d5f28f194057e56d827ad5341ebfed3b1e0e6fd4dd27e6d782
+
+Package: nic-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 572
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: nic-modules
+Depends: kernel-image-3.2.0-4-amd64-di, nic-shared-modules-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di, firewire-core-modules-3.2.0-4-amd64-di
+Description: Common NIC drivers
+Description-md5: e1fdc9f65cd9abccdd4add55e64a9b83
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/nic-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 146560
+MD5sum: 347a7b4a3a9b336b1a42f80fb3ac2e2e
+SHA1: 3923a159f3479843f544c8eebbc09abff79a3922
+SHA256: fe971e894613dfd3bde36c402909789a728c54c5aded3ac24721209f0a06f473
+
+Package: nic-pcmcia-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 587
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: nic-pcmcia-modules
+Depends: kernel-image-3.2.0-4-amd64-di, nic-shared-modules-3.2.0-4-amd64-di, nic-wireless-modules-3.2.0-4-amd64-di, pcmcia-modules-3.2.0-4-amd64-di, mmc-core-modules-3.2.0-4-amd64-di
+Description: Common PCMCIA NIC drivers
+Description-md5: 9a09ebed0b9b50dd37c834d09e69146b
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/nic-pcmcia-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 130150
+MD5sum: cd434416ea5611e24469a1e40d2ae8e4
+SHA1: 7e793f1982ac6731e3e9fe00b2cbc2b2b5c090b3
+SHA256: a2bcded47a91947bcc33704e6ebeb2a6a2610173a2842fc9d86c2b86869d5c48
+
+Package: nic-shared-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 65
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: nic-shared-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: Shared NIC drivers
+Description-md5: 1c2824434018e9100463aee5fc2384dd
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/nic-shared-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 16822
+MD5sum: 3e109981c4c6264510cb9f58af0612e6
+SHA1: 05b0dcc507b4d0b8b456b914c1c3b38f842249f2
+SHA256: f32bfdcd5d7dd24566551157154c643114bbe09277c386b98d3ba2a845312f2c
+
+Package: nic-usb-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 520
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: nic-usb-modules
+Depends: kernel-image-3.2.0-4-amd64-di, nic-shared-modules-3.2.0-4-amd64-di, nic-wireless-modules-3.2.0-4-amd64-di, usb-modules-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di
+Description: USB NIC drivers
+Description-md5: 6e3c0040cd88b5f5cc7afbf281004619
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/nic-usb-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 112694
+MD5sum: 7680295fde512f936eb9d5861d40898c
+SHA1: 0bcf92686f4e542d3b85b152b84e676cf47aa6a6
+SHA256: 08c9ad06dab1ded94beca4df05691edc119ae17ced7127346e5c6e6bfb2e0892
+
+Package: nic-wireless-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 7131
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: nic-wireless-modules
+Depends: kernel-image-3.2.0-4-amd64-di, nic-shared-modules-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di, usb-modules-3.2.0-4-amd64-di, mmc-modules-3.2.0-4-amd64-di, pcmcia-modules-3.2.0-4-amd64-di, crc-modules-3.2.0-4-amd64-di
+Description: Wireless NIC drivers
+Description-md5: ce87faa9b7c1ed34b17c7a795aff2b89
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/nic-wireless-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 1678200
+MD5sum: 0235a1c70100deb8e4a79d72bee9c182
+SHA1: 580280dc4dfe5b9234b48a49a8dcec1a2152226d
+SHA256: c644c2f7a2138387511e0fb68250ccac07c8fcb967e64eda48bf5c37f11f56e7
+
+Package: ntfs-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 268
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: ntfs-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: NTFS filesystem support
+Description-md5: ed7835c123267bb40f1f6c78aee19f8e
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/ntfs-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 73156
+MD5sum: d92049cc9c032c1cb5e920753ed0e84f
+SHA1: 0e545ce0c20199f2323fe09edb3996c488b36dcc
+SHA256: fb3934c0d565b78df75cf2490354c63047194b6676ebacf63776d80e5e9500ef
+
+Package: pata-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 360
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: pata-modules
+Depends: kernel-image-3.2.0-4-amd64-di, ata-modules-3.2.0-4-amd64-di
+Description: PATA drivers
+Description-md5: 8135ae29fc443f7ad882782beaa1a00b
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/pata-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 47032
+MD5sum: 8c68a51c1c6130533d63f24d7bf078f6
+SHA1: f72757862a42068d80c196a9b614007ba321f3e9
+SHA256: b469aa1567075ee2a5300ec1b83bdb59b6399047cf84a3b1fec298757fc94f6f
+
+Package: pcmcia-storage-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 37
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: pcmcia-storage-modules
+Depends: kernel-image-3.2.0-4-amd64-di, cdrom-core-modules-3.2.0-4-amd64-di, pcmcia-modules-3.2.0-4-amd64-di, ata-modules-3.2.0-4-amd64-di
+Description: PCMCIA storage drivers
+Description-md5: 59ae10bd8df7824ad87e6633e20bed41
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/pcmcia-storage-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 7188
+MD5sum: 4ce0f138d95b137175b2538b46a23e09
+SHA1: 1bff0c9565cc5f517a3ae580ab37aa57f1e8bf04
+SHA256: 43d54d26570aef4d5b62397a56c2b34763685ddf83a3831ad24c417f074e1450
+
+Package: plip-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 23
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: plip-modules
+Depends: kernel-image-3.2.0-4-amd64-di, parport-modules-3.2.0-4-amd64-di
+Description: PLIP drivers
+Description-md5: b4e003b33b235958d3bf93039bd23aa1
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/linux/plip-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 6956
+MD5sum: 3f35236c42ccf24e80fdd4513c4aaabc
+SHA1: 08c7f0ee08c6dff8e4d48bc85e7d2c6670610057
+SHA256: 535a04d98a6b126bd607d809e14ef2c7bc5d3ddd019e3012b5552cff55e78b30
+
+Package: ppp-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 129
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: ppp-modules
+Depends: kernel-image-3.2.0-4-amd64-di, serial-modules-3.2.0-4-amd64-di, zlib-modules-3.2.0-4-amd64-di, crc-modules-3.2.0-4-amd64-di
+Description: PPP drivers
+Description-md5: cbb4e1e6f89cdae527b3ac22d5e5afd7
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/linux/ppp-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 31680
+MD5sum: 55f0ec7b54b2d2a022086e682c6e09f7
+SHA1: af1e309fdb7af73105de9f6cd9edbf03a833443c
+SHA256: 1e3bab679a52b862e6569c5c5e0479d63e514d857b7dc642172416091e699323
+
+Package: qnx4-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 18
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: qnx4-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: QNX4 filesystem support
+Description-md5: f313b87eb776bd3d88b4aaf060d4307a
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/qnx4-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 5418
+MD5sum: ca58da566775c6bd3a3a2173c611458e
+SHA1: 026723c982ac12aeac51f950042a9f7c41349eea
+SHA256: d64ff571bc4970e10fca872dc57d62e0e9522d9682b0f901397f80bff38e5ff2
+
+Package: reiserfs-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 300
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: reiserfs-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: Reiser filesystem support
+Description-md5: e478cc774eaf40c7b936ce4c2545b91d
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/reiserfs-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 92756
+MD5sum: 5db8125f363913b4f54345f9fd1f879e
+SHA1: 43810f01141d9b823e436ef61335000bd05a36cb
+SHA256: 064878bb102f9f7b3d5651a8c14feb45d093bb5e2e1400e6a06aead09b1d5c41
+
+Package: scsi-extra-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 4406
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: scsi-extra-modules
+Depends: scsi-modules-3.2.0-4-amd64-di, scsi-core-modules-3.2.0-4-amd64-di
+Description: Uncommon SCSI drivers
+Description-md5: d7e70e9d1a03a5cf9fb78f564341f198
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/scsi-extra-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 1070086
+MD5sum: 5c3601974e82b2833a97c07196888abd
+SHA1: 8d0e863e2b6ae2bb6493b65bdeffc63d0ec2acae
+SHA256: 1a70dc8d70413280dbc0c114fc90cd7bd384509c04e8746bc1587c4116b8dab7
+
+Package: sound-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 5705
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: sound-modules
+Depends: kernel-image-3.2.0-4-amd64-di, core-modules-3.2.0-4-amd64-di, i2c-modules-3.2.0-4-amd64-di, usb-modules-3.2.0-4-amd64-di, pcmcia-modules-3.2.0-4-amd64-di, firewire-core-modules-3.2.0-4-amd64-di, crc-modules-3.2.0-4-amd64-di
+Description: sound support
+Description-md5: 7b9857ef4ef6702da2f0ed5cef3004f3
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/sound-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 1044462
+MD5sum: 512f62cbcbeebeb7392a122db9ee0ffc
+SHA1: a5abf4545f932bb11bd3cae480085c5d8a0ca47d
+SHA256: 74111bfc5d2cb326bc6132c81114b97b9601696b98f1b30925ad09bfc5460b3d
+
+Package: squashfs-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 46
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: squashfs-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: squashfs modules
+Description-md5: 2341cad0bd616925a1ac07764f946643
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/squashfs-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 14332
+MD5sum: 35329ee237accf30da2690012f444c15
+SHA1: a99725b1c353f95000280d808ccf50c333d85ec6
+SHA256: 7f98d024d8a372d1970dd0ecaff652437d2b54265951ee60e81d0d9a68851fa8
+
+Package: udf-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 105
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: udf-modules
+Depends: kernel-image-3.2.0-4-amd64-di, crc-modules-3.2.0-4-amd64-di
+Description: UDF modules
+Description-md5: 6277b452177dd15c4376b6b96299da6e
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/udf-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 36898
+MD5sum: b0a4fe634b64c90ce303273cf957a7d3
+SHA1: 1db9dd297c179d9ca1e65cd56dd219134502e084
+SHA256: accef4293ed72e53360015b0e9888db906e85d89a758367653c601a623be8e1c
+
+Package: ufs-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 85
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: ufs-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: UFS filesystem support
+Description-md5: 49e525f1ada70b45d4ffabd873cf8b21
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/ufs-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 28548
+MD5sum: 4b9af92f3ab16680b463ffad2a5bf617
+SHA1: c0e42730b59591ecd1b3196bedc45b026d4b3fe3
+SHA256: 2d4ca300ea62c98f6fc14278ab08ade49c2832d0047e019f426039546fd18e7a
+
+Package: uinput-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 18
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: uinput-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: uinput support
+Description-md5: b3c6edf990edde935d6ff82eb9355532
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/uinput-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 5718
+MD5sum: a02cedef279e7960128ab83fa933dbdb
+SHA1: e348fe9cd5c5ea7ca5f5ebaf8bcb4a6265a28c0c
+SHA256: c28ff1f1f8255c2b994a548919301b60c1c383da15736be8a0c603d1dfffb4b7
+
+Package: virtio-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 97
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: virtio-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: virtio modules
+Description-md5: cf29f13e7abeea89718c18225b7c9d52
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/virtio-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 22400
+MD5sum: 3160b869a117b18e46ef72c7c267a513
+SHA1: 783328bd7002f040797cd966bf2a6a6eb9f84e85
+SHA256: 02d603547090f1bc2cd45917a05220237b3358bcf97d9b6cea8188617644ef76
+
+Package: xfs-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 982
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: xfs-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: XFS filesystem support
+Description-md5: af940d874a0e44fe930227fd1f4f4a7d
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: standard
+Filename: pool/main/l/linux/xfs-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 239962
+MD5sum: 581f461dacc3d33f62affb1f9f0857a7
+SHA1: a120704b5792a7a377ef0842924ff1b60de8a829
+SHA256: 79c5ca1399123fd6d140c0737c696c0fe33d67aa23747e2956f7861284aa3941
+
+Package: zlib-modules-3.2.0-4-amd64-di
+Source: linux
+Version: 3.2.57-3
+Installed-Size: 22
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: amd64
+Provides: zlib-modules
+Depends: kernel-image-3.2.0-4-amd64-di
+Description: zlib modules
+Description-md5: cda2a90932b2827ef38c57b3c1a5f24d
+Kernel-Version: 3.2.0-4-amd64
+Section: debian-installer
+Priority: extra
+Filename: pool/main/l/linux/zlib-modules-3.2.0-4-amd64-di_3.2.57-3_amd64.udeb
+Size: 9342
+MD5sum: 81363ff1a36463b30c21d18890334a3a
+SHA1: 1bb394f49442b7cc927db4764f89b8c3ccbfc801
+SHA256: 2b90a63302223822b5bc56c3a3fec3ff94661c203027ef79185ce2b97070a501
+
+Package: ntfsprogs-udeb
+Source: linux-ntfs (2.0.0-1)
+Version: 2.0.0-1+b1
+Installed-Size: 192
+Maintainer: David Martínez Moreno <ender@debian.org>
+Architecture: amd64
+Provides: ntfstools-udeb
+Depends: libc6-udeb (>= 2.10)
+Description: Tools for doing neat things in NTFS partitions from Linux - udeb
+Description-md5: d9b7d58e4c966ce916214470205ac468
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/linux-ntfs/ntfsprogs-udeb_2.0.0-1+b1_amd64.udeb
+Size: 86550
+MD5sum: a7aa898b4b0feaebc0c53e9ed8771548
+SHA1: 1e8a15f226fc18db867475817441b3d2d212a82c
+SHA256: 16a98448a41894400aef92f832ac9d65e5364ee92b01f0f8dc5a3ebcb845469d
+
+Package: localization-config-udeb
+Source: localization-config
+Version: 1.07+nmu1
+Installed-Size: 34
+Maintainer: Debian Edu Developers <debian-edu@lists.debian.org>
+Architecture: all
+Depends: localechooser, cdebconf-udeb
+Description: localize the installed system completely
+Description-md5: 42b19f06478756782dd0ea1dfed7f9ae
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/localization-config/localization-config-udeb_1.07+nmu1_all.udeb
+Size: 2796
+MD5sum: 422ee463e86831d667fea52f0c468125
+SHA1: 27bdb3ef7a0951731d5ab1c838d960d33f5e8761
+SHA256: 189e3139cf116955979ad04ae4b4e3c56584a672e0ee74184bb683581bcffe64
+
+Package: lowmem
+Version: 1.38
+Installed-Size: 22
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb
+Description: free memory for lowmem install
+Description-md5: 661730d3bba6c8a0ab83562900c2fd64
+Installer-Menu-Item: 2500
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/lowmem/lowmem_1.38_all.udeb
+Size: 1498
+MD5sum: 63e7bc92cc404c784ebcc865d840f82a
+SHA1: 49a27b77b98807f0341a6aef812ba3f0ab046d12
+SHA256: ac450b2d507ee6738211e9c2fe5d3291db31877e16b58a34809f227635aadc02
+
+Package: dmsetup-udeb
+Source: lvm2 (2.02.95-8)
+Version: 2:1.02.74-8
+Installed-Size: 58
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdevmapper1.02.1-udeb (>= 2:1.02.74)
+Description: Linux Kernel Device Mapper userspace library
+Description-md5: 808f3b8b96c64d5f095bd9a6d6d9c928
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/lvm2/dmsetup-udeb_1.02.74-8_amd64.udeb
+Size: 21346
+MD5sum: 21567fe77e24b8a7cb17bd541dc5ffea
+SHA1: 1d3d85292d6d2ad2f1e565be7583c8180c7326f2
+SHA256: 8881119885dc4dca2240840ec9590de87bc586cc743c6cbdb612453c5d907d9f
+
+Package: libdevmapper1.02.1-udeb
+Source: lvm2 (2.02.95-8)
+Version: 2:1.02.74-8
+Installed-Size: 189
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: Linux Kernel Device Mapper userspace library
+Description-md5: 286186cab6b3376e8233f35d6ab5ddcc
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/lvm2/libdevmapper1.02.1-udeb_1.02.74-8_amd64.udeb
+Size: 71770
+MD5sum: 41819af3cc74d236ad55341c3f694dc7
+SHA1: 4d0f7028ad5ead54232e1693a8e211d006cbf2b5
+SHA256: f13fbb34b5414a8995a5545e361e95432d526db3c3fffdb89303855463eea5e4
+
+Package: lvm2-udeb
+Source: lvm2
+Version: 2.02.95-8
+Installed-Size: 777
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libdevmapper1.02.1-udeb (>= 2:1.02.74)
+Description: Linux Logical Volume Manager
+Description-md5: e9593344953c37983c9aff39dd3508b2
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/lvm2/lvm2-udeb_2.02.95-8_amd64.udeb
+Size: 294758
+MD5sum: 60f8859344269396dcd615b14a4f49cc
+SHA1: e9ef7ee428a396f554f6a318f64de8caf6bbc396
+SHA256: 8721d68d234036296d7744839937695b337804387d2b8316a544f04b6b5301cc
+
+Package: lvmcfg-utils
+Source: lvmcfg
+Version: 1.29
+Installed-Size: 624
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, md-modules, lvm2-udeb, parted-udeb, di-utils (>= 1.15)
+Description: lvmcfg without the main menu item
+Description-md5: 46b1138c943b0b6616f65304f54f3f4f
+Section: debian-installer
+Priority: optional
+Filename: pool/main/l/lvmcfg/lvmcfg-utils_1.29_all.udeb
+Size: 170488
+MD5sum: 64645eddc8197fdcb4f6b5d60cac7570
+SHA1: a8ea0ae77f1a31e61028eb57d19e5d5bec9cf8cd
+SHA256: a472c94d6ec219bc8777aceee41dec6147ac74cdadb0eb22ebb5bf88d9221140
+
+Package: matchbox-keyboard-udeb
+Source: matchbox-keyboard (0.1+svn20080916-9)
+Version: 0.1+svn20080916-9+b1
+Installed-Size: 118
+Maintainer: Moray Allan <moray@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libexpat1-udeb (>= 1.95.8), libfakekey0-udeb, libglib2.0-udeb (>= 2.32.3), libgtk2.0-0-udeb (>= 2.24.0), libpng12-0-udeb (>= 1.2.13-4), libx11-6-udeb (>= 2:1.4.99.1), libxft2-udeb (>> 2.1.1), libxrender1-udeb
+Description: on-screen keyboard
+Description-md5: bda6e4269e3236d28deecf0cbe8b9aae
+Section: debian-installer
+Priority: optional
+Filename: pool/main/m/matchbox-keyboard/matchbox-keyboard-udeb_0.1+svn20080916-9+b1_amd64.udeb
+Size: 21076
+MD5sum: f41719ae1d9919317d366bba1060b086
+SHA1: 9dcc710192d166a2469242dafb0625049d48ab66
+SHA256: 4ef3d1ca5b438c5b58c66fefd0193f094bd78bc9c9d775d410bef065f03d2a5f
+
+Package: matchbox-window-manager-udeb
+Source: matchbox-window-manager (1.2-osso21-1)
+Version: 1.2-osso21-1+b1
+Installed-Size: 84
+Maintainer: Moray Allan <moray@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libx11-6-udeb (>= 2:1.4.99.1), libxext6-udeb (>= 2:1.3.0)
+Description: window manager for resource-limited systems
+Description-md5: 1af7ef7de187a45fb1bbeee3118e81e6
+Section: debian-installer
+Priority: optional
+Filename: pool/main/m/matchbox-window-manager/matchbox-window-manager-udeb_1.2-osso21-1+b1_amd64.udeb
+Size: 33674
+MD5sum: b5daf2b6dfe551e53f75d8fbbf4e8926
+SHA1: 254d1b9dcb5c51c452a317f9470675ab2527985c
+SHA256: 9f99e62f94f2564a4e03f51926ad3887c5fbac15659fc9a43dac32cbd1812839
+
+Package: mbr-udeb
+Source: mbr (1.1.11-5)
+Version: 1.1.11-5+b1
+Installed-Size: 33
+Maintainer: Santiago Garcia Mantinan <manty@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: Master Boot Record for IBM-PC compatible computers
+Description-md5: db79ed0de7eb6b55e9a8a9444b0f1e79
+Installer-Menu-Item: 99999
+Section: debian-installer
+Priority: extra
+Filename: pool/main/m/mbr/mbr-udeb_1.1.11-5+b1_amd64.udeb
+Size: 8972
+MD5sum: 216726b18b46cec91ae2798b189d1139
+SHA1: 5ba850f3f8dbf8c338a1288b1fb4a9d55f4b9980
+SHA256: d46c77e3c8fce2a1aa12cbd4b473bdc27c2ab4c8189b843e80df9ef481788e6e
+
+Package: mdadm-udeb
+Source: mdadm
+Version: 3.2.5-5
+Installed-Size: 616
+Maintainer: Debian mdadm maintainers <pkg-mdadm-devel@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: tool to administer Linux MD arrays (software RAID)
+Description-md5: 030bc63257ebde919b577e5dec1c7438
+Section: debian-installer
+Priority: optional
+Filename: pool/main/m/mdadm/mdadm-udeb_3.2.5-5_amd64.udeb
+Size: 195186
+MD5sum: 82d36b687f45e78114f58d760aeaf6df
+SHA1: 17a29387a019648d02736cc1a2d88a36c95b4c5f
+SHA256: 1908e4a069c720d326e5613351599ec4f38a6ddac1d87ca188bace5bf09e2410
+
+Package: mdcfg-utils
+Source: mdcfg
+Version: 1.40
+Installed-Size: 459
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, di-utils (>= 1.16), md-modules, mdadm-udeb (>= 2.5.2), partconf-find-partitions
+Description: Configure MD devices
+Description-md5: 8cf51f9ff066d20e1ef2a30094541bc7
+Section: debian-installer
+Priority: optional
+Filename: pool/main/m/mdcfg/mdcfg-utils_1.40_all.udeb
+Size: 153594
+MD5sum: 10d5142b599949d2a8a6f3912a3c223f
+SHA1: 4816614e4f5028780a798ec4529469139689ab1d
+SHA256: 134d065e0e2f752b18beeda2593497a2c3cd3e25d04a2b77a34dff56293700d8
+
+Package: load-media
+Source: media-retriever
+Version: 1.28
+Installed-Size: 133
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, media-retriever, anna
+Description: Load installer components from removable media
+Description-md5: 5f3966b33299e5d4014ca0dd8ea83ed2
+Installer-Menu-Item: 1100
+Section: debian-installer
+Priority: extra
+Filename: pool/main/m/media-retriever/load-media_1.28_all.udeb
+Size: 45864
+MD5sum: c37b53b053c24237b3ba638ebc7f8710
+SHA1: e7ae906865e1553f95e7cdab57b89903d1eb70e7
+SHA256: 6e3afdde66b89389ccb259cfec4eeb991aba711da92819b1eec1b5bcfacf7349
+
+Package: media-retriever
+Version: 1.28
+Installed-Size: 60
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: retriever
+Depends: cdebconf-udeb, mountmedia
+Description: Fetches modules from removable media
+Description-md5: 06cd96b043570520b87bc568f4a432bd
+Section: debian-installer
+Priority: optional
+Filename: pool/main/m/media-retriever/media-retriever_1.28_all.udeb
+Size: 15566
+MD5sum: a3e5456bfb82413bf87d5d931626290a
+SHA1: b17277825b04699813c866e7272add2df4943533
+SHA256: 592053ef9493b912e1b34bb33c5d546382364caec1150ce0fc9790bb2d57d1cb
+
+Package: mii-diag-udeb
+Source: mii-diag (2.11-3)
+Version: 2.11-3+b1
+Installed-Size: 34
+Maintainer: Alexander Reichle-Schmehl <tolimar@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: A little tool to manipulate network cards
+Description-md5: 34d28ee8cbb2d1cbe4c0f031e77d01ba
+Section: debian-installer
+Priority: extra
+Filename: pool/main/m/mii-diag/mii-diag-udeb_2.11-3+b1_amd64.udeb
+Size: 7670
+MD5sum: 5f22a5a24aa3c73320efde8317abfb5b
+SHA1: fff24bb54a871daac73bedd6f604a7564eae0c35
+SHA256: 038ad14b91d5700486cefdf70960b6d0bafc0217b3e53fcc0cdc6e81f373df91
+
+Package: mountfloppy
+Version: 0.16
+Installed-Size: 44
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, di-utils (>= 1.48)
+Description: Mounts a floppy
+Description-md5: ad6d2ea58330887198899186e16b12fb
+Section: debian-installer
+Priority: optional
+Filename: pool/main/m/mountfloppy/mountfloppy_0.16_all.udeb
+Size: 11902
+MD5sum: 7b9bbdd6d8378f54e41c585a8cf5aef5
+SHA1: cae29c1773be695910851f963d84edbc73b89804
+SHA256: ff58c8389514463e4daa04503e13f26fc67ccc354b111756d8138ee70f852538
+
+Package: mountmedia
+Version: 0.22
+Installed-Size: 15
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: di-utils (>= 1.66)
+Description: Mounts media
+Description-md5: 466c1c714b2907c8337d4fbb6a361551
+Section: debian-installer
+Priority: optional
+Filename: pool/main/m/mountmedia/mountmedia_0.22_all.udeb
+Size: 1782
+MD5sum: f9ad5a7f46ef0ed5b964fa2cfc3dad18
+SHA1: e4d8795d7c373e678ac414afb9b152346a39b7a6
+SHA256: bbdc22e189afe2279dbacab8e1b625135f39987e695b5fd37a9a5208c3120065
+
+Package: libmtdev1-udeb
+Source: mtdev
+Version: 1.1.2-1
+Installed-Size: 40
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: Multitouch Protocol Translation Library - shared library
+Description-md5: e8d41e32219fa4696744593d723de015
+Section: debian-installer
+Priority: optional
+Filename: pool/main/m/mtdev/libmtdev1-udeb_1.1.2-1_amd64.udeb
+Size: 10976
+MD5sum: ad9e9a7ca006a61a2e2876809b070eb7
+SHA1: 424335a0ec2b91f04fd392c8aca4df764e872a96
+SHA256: f931b2dd7eb9e108cb46501709c5063e23b124bd8844dbedca1039989be439c3
+
+Package: multipath-udeb
+Source: multipath-tools
+Version: 0.4.9+git0.4dfdaf2b-7~deb7u2
+Installed-Size: 501
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libaio1-udeb, libc6-udeb (>= 2.13), libdevmapper1.02.1-udeb (>= 2:1.02.74), multipath-modules
+Description: maintain multipath block device access - udeb package
+Description-md5: 992e690c28b4b30de4f533c9ad330fd8
+Section: debian-installer
+Priority: extra
+Filename: pool/main/m/multipath-tools/multipath-udeb_0.4.9+git0.4dfdaf2b-7~deb7u2_amd64.udeb
+Size: 128560
+MD5sum: 3d1ebd72aeb6a6de5aea37f99ea5da99
+SHA1: 99752bbda5dc764b239d31cfc047252b469f5a45
+SHA256: fce65e53a05b536ac546479dc0ed72172068fcc42d77d3f94505d9d87f8d184c
+
+Package: ndisc6-udeb
+Source: ndisc6 (1.0.1-1)
+Version: 1.0.1-1+b1
+Installed-Size: 29
+Maintainer: Rémi Denis-Courmont <remi@remlab.net>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Conflicts: iputils-tracepath (<< 3:20070202)
+Description: IPv6 diagnostic tools
+Description-md5: 967627947977c19a79eaece270db57e0
+Section: debian-installer
+Priority: optional
+Filename: pool/main/n/ndisc6/ndisc6-udeb_1.0.1-1+b1_amd64.udeb
+Size: 7416
+MD5sum: 5eaa3e8163f75685514472f0951fb3fa
+SHA1: cb9bbec288c8c892ea7b1c96c382b43d7279c644
+SHA256: b326ec280375fb028d8e87c4c08bbd4a69b3575115333fdc9a13beb10502d237
+
+Package: rdnssd-udeb
+Source: ndisc6 (1.0.1-1)
+Version: 1.0.1-1+b1
+Installed-Size: 32
+Maintainer: Rémi Denis-Courmont <remi@remlab.net>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libnss-files-udeb
+Description: IPv6 recursive DNS server discovery daemon
+Description-md5: 9019d758011e5ab5f833064742b22d02
+Section: debian-installer
+Priority: optional
+Filename: pool/main/n/ndisc6/rdnssd-udeb_1.0.1-1+b1_amd64.udeb
+Size: 7926
+MD5sum: ad73588c169d1b1456e148175d1ee9b8
+SHA1: b6cf8fd65a60151918e5a90ba663b95d6c360e70
+SHA256: 8a41b33c6f3d71ac4b554cda42f0be742e6602cbdb1f4b02bd561c4b33f99459
+
+Package: net-retriever
+Version: 1.32
+Installed-Size: 66
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: retriever
+Depends: cdebconf-udeb, choose-mirror, configured-network, di-utils (>= 1.58), gpgv-udeb, debian-archive-keyring-udeb
+Description: Fetch modules from the Internet
+Description-md5: ab97cb2e67d7140057eb5338dba7ae23
+Section: debian-installer
+Priority: optional
+Filename: pool/main/n/net-retriever/net-retriever_1.32_all.udeb
+Size: 17790
+MD5sum: db1688e835267ec4174fb7e538f75374
+SHA1: 17db261aca774029aec121eb49c63e9cbc8d0f6b
+SHA256: c5fad380062af2693d5fbe9fc5cd5be23f656fe81a1a6af51efabf413a858bea
+
+Package: netcfg
+Version: 1.108+deb7u1
+Installed-Size: 1254
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: configured-network
+Depends: libc6-udeb (>= 2.13), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.87), libiw30-udeb (>= 30~pre1), ethernet-card-detection, wpasupplicant-udeb, crypto-modules, rdnssd-udeb, ndisc6-udeb, wide-dhcpv6-client-udeb
+Description: Configure the network
+Description-md5: a7c0f0e52f4c3696ef507310218651da
+Installer-Menu-Item: 1800
+Section: debian-installer
+Priority: optional
+Filename: pool/main/n/netcfg/netcfg_1.108+deb7u1_amd64.udeb
+Size: 425136
+MD5sum: 09cae4eb29cfb38f45f8e268150e58fa
+SHA1: 24ea614d9e9fe3ccd19631fc2d9eadd9be210295
+SHA256: e68238a22ee003860f1ba922f2826531b64998d3fb57f6bad0204e479e573123
+
+Package: network-console
+Version: 1.43
+Installed-Size: 212
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: cdebconf-udeb, configured-network, openssh-server-udeb
+Description: Continue installation remotely using SSH
+Description-md5: e55411fc6e0b28d64ec96a3c712bf9c6
+Installer-Menu-Item: 2100
+Section: debian-installer
+Priority: optional
+Filename: pool/main/n/network-console/network-console_1.43_amd64.udeb
+Size: 82040
+MD5sum: dca104c8ddcd3add6105ca238d3badba
+SHA1: cdcdec0cea1262b67f317aea9fe90f2dfe2e241a
+SHA256: e4b79bee5237ed4832dabdbbf2e963a515f2ba8583d3adcae591e058d0e78bee
+
+Package: nobootloader
+Version: 1.38
+Installed-Size: 216
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: bootable-system
+Depends: cdebconf-udeb, installed-base, di-utils-mapdevfs
+Description: Don't install any bootloader
+Description-md5: 6c574c15c77d134963f3bc2e282af390
+Installer-Menu-Item: 7700
+Section: debian-installer
+Priority: standard
+Filename: pool/main/n/nobootloader/nobootloader_1.38_all.udeb
+Size: 72676
+MD5sum: 461638433d2289b4cf5127c9ad644400
+SHA1: bf365fabb4ee34dcac92983363ad2b5729da1f06
+SHA256: b5bbac853b91ae08839d223b965cc9acb59b58cfb9b583f4ffc40dcdf2bd01f7
+
+Package: ntfs-3g-udeb
+Source: ntfs-3g
+Version: 1:2012.1.15AR.5-2.1
+Installed-Size: 436
+Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libfuse2-udeb (>= 2.8.1), fuse-udeb
+Description: read/write NTFS driver for FUSE
+Description-md5: 02a565591c45fcabdc21d1a829182737
+Section: debian-installer
+Priority: optional
+Filename: pool/main/n/ntfs-3g/ntfs-3g-udeb_2012.1.15AR.5-2.1_amd64.udeb
+Size: 179220
+MD5sum: ddc20c0216915bbeb3ff2b5b7dfc04aa
+SHA1: 1441e4ca020e9e8812c27e904119871d959ea2e8
+SHA256: 3a3acda905f8c5ebb7be700b8e4e6a08e9e45842af423f729b426846837efcc7
+
+Package: oldsys-preseed
+Version: 3.13
+Installed-Size: 56
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Description: Preseed debian-installer from an existing device
+Description-md5: 77291ff9caf15527bcc4e2e3a9d86333
+Section: debian-installer
+Priority: optional
+Filename: pool/main/o/oldsys-preseed/oldsys-preseed_3.13_amd64.udeb
+Size: 6342
+MD5sum: fc2897a9f01b6fd41d94164a4981bd9d
+SHA1: c62a18d2bfbeca66dfaaaf93035174257c06cfe5
+SHA256: 241ffab33961ed64a9909dad6c1d69c25769c72ef5ec9683423885ea7abd9644
+
+Package: open-iscsi-udeb
+Source: open-iscsi
+Version: 2.0.873-3
+Installed-Size: 2014
+Maintainer: Debian iSCSI Maintainers <pkg-iscsi-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), scsi-modules, libnss-files-udeb
+Description: Configure iSCSI
+Description-md5: bb01557a892cc61ab61f96f57de6d126
+Section: debian-installer
+Priority: optional
+Filename: pool/main/o/open-iscsi/open-iscsi-udeb_2.0.873-3_amd64.udeb
+Size: 228620
+MD5sum: 141534982612208d3b04fcc6c9d7fbe0
+SHA1: cf503fa7f5acc5b776158ac8befed8e431c8dd03
+SHA256: d441b5b726901a9399257ee388dfcf4d2c166b2ce0ead1e4fc63cfaa1e765f21
+
+Package: openssh-client-udeb
+Source: openssh
+Version: 1:6.0p1-4+deb7u2
+Installed-Size: 507
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libcrypto1.0.0-udeb (>= 1.0.1d), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1), libnss-files-udeb
+Description: secure shell client for the Debian installer
+Description-md5: 8eb31ba05cec17383b0d0e14b761a749
+Installer-Menu-Item: 99999
+Section: debian-installer
+Priority: optional
+Filename: pool/main/o/openssh/openssh-client-udeb_6.0p1-4+deb7u2_amd64.udeb
+Size: 185200
+MD5sum: b8a7a310d5158be180fea4701e6ccbeb
+SHA1: e29c5f4942b6b3b1c5d6b37a166eda74e1e1acdf
+SHA256: c792bba691e8fbb06de8f0fa1e0c08a3becde3f36597b556906e53a540a528e6
+
+Package: openssh-server-udeb
+Source: openssh
+Version: 1:6.0p1-4+deb7u2
+Installed-Size: 581
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libcrypto1.0.0-udeb (>= 1.0.1d), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1), libnss-files-udeb
+Description: secure shell server for the Debian installer
+Description-md5: 1de3721655cd1a38fac0fe1a6b2b1e22
+Section: debian-installer
+Priority: optional
+Filename: pool/main/o/openssh/openssh-server-udeb_6.0p1-4+deb7u2_amd64.udeb
+Size: 199346
+MD5sum: c04b91fb0ad7addba03b9eb7ecfd532d
+SHA1: 275f81b955e431baf64907cf108e488d574c41c1
+SHA256: ad331fe6bde851121e22ad1379630404a9816e282aef6517f580db41fbaa59a1
+
+Package: libcrypto1.0.0-udeb
+Source: openssl
+Version: 1.0.1e-2+deb7u11
+Installed-Size: 2017
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: crypto shared library - udeb
+Description-md5: 5738feb9563e3c9a80a330869911de18
+Section: debian-installer
+Priority: optional
+Filename: pool/main/o/openssl/libcrypto1.0.0-udeb_1.0.1e-2+deb7u11_amd64.udeb
+Size: 635590
+MD5sum: 03a0910d215131ea009388e1e243956d
+SHA1: 01348e48de3a4a8a104a6fb73dbde82ae3edf0df
+SHA256: 5382fbf0360dcccf93caf83726e493cc83872549ce0c148c08485f45bb7eeedf
+
+Package: os-prober-udeb
+Source: os-prober
+Version: 1.58
+Installed-Size: 116
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: os-prober
+Depends: libc6-udeb (>= 2.13), di-utils-mapdevfs, anna (>= 1.16), grub-mount-udeb
+Description: utility to detect other OSes on a set of drives
+Description-md5: eb9308d87278ee3239e33353ec9b0216
+Section: debian-installer
+Priority: optional
+Filename: pool/main/o/os-prober/os-prober-udeb_1.58_amd64.udeb
+Size: 13740
+MD5sum: d11eaea840c260652bda771efc25f17d
+SHA1: 2d920301951012a54bdbca28e77dbd1a96e2ea72
+SHA256: c9690ca2e0b538bb2efc2a3eec645a6ffa32d035838040414c2de051e65f080a
+
+Package: partconf-find-partitions
+Source: partconf
+Version: 1.40
+Installed-Size: 33
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libparted0-udeb (>= 2.2-1)
+Description: debian-installer utility for finding partitions
+Description-md5: e11c322a417b332791c62b70a31a7642
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partconf/partconf-find-partitions_1.40_amd64.udeb
+Size: 5688
+MD5sum: e7dc991d338463db9c52d4cb239d7451
+SHA1: 5c52e5a650cb66cbbe2ea18938750c031b7e4d2e
+SHA256: efffc9ad029f5d7dccb3a505b41facba65d976c0056f59489d30d28f713356a5
+
+Package: libparted0-udeb
+Source: parted
+Version: 2.3-12
+Installed-Size: 445
+Maintainer: Parted Maintainer Team <parted-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libblkid1-udeb (>= 2.16), libc6-udeb (>= 2.13), libdevmapper1.02.1-udeb (>= 2:1.02.74), libuuid1-udeb (>= 2.16)
+Description: disk partition manipulator - library udeb
+Description-md5: 7ff13fb62535e1f4d5f29b387170d500
+Section: debian-installer
+Priority: extra
+Filename: pool/main/p/parted/libparted0-udeb_2.3-12_amd64.udeb
+Size: 170770
+MD5sum: b57727b5867994a595ca4852bfbc6314
+SHA1: f61887630130eabae2f77a0067733718b8b7094a
+SHA256: ce9e15201c5d06d933232488119ae9be8b0155158b189739ed45257b3c17a549
+
+Package: parted-udeb
+Source: parted
+Version: 2.3-12
+Installed-Size: 80
+Maintainer: Parted Maintainer Team <parted-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libparted0-udeb (>= 2.2-1)
+Description: Manually partition a hard drive (parted)
+Description-md5: 4f6f7c59ec85baf2c88c7eb3221edd53
+Installer-Menu-Item: 99999
+Section: debian-installer
+Priority: extra
+Filename: pool/main/p/parted/parted-udeb_2.3-12_amd64.udeb
+Size: 25456
+MD5sum: dcaf1e7662f8310ca4710510186c3a94
+SHA1: e28a505bfd6ef6734b0af492b863f8ba7cf3a790
+SHA256: c8a837ea5b114f553d6f4cc523812c45ee495af4e64c7d3e0d2d19abc37ff712
+
+Package: partman-auto
+Version: 106
+Installed-Size: 317
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: cdebconf-udeb, di-utils, partman-base (>= 129), partman-basicfilesystems, partman-ext3
+Description: Automatically partition storage devices (partman)
+Description-md5: f55374eaa156935ee72eb809efc54a32
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-auto/partman-auto_106_amd64.udeb
+Size: 84894
+MD5sum: 49e1368da0d1a3e18c20f3d6c4eb2fe5
+SHA1: 4d1be60e40f058d06b8849c4b3c4b1aa5c0eebb2
+SHA256: f3bf80dcb3f2f508052152c02eb3fc303ea823d58d09d9d56f9209a6271c908e
+
+Package: partman-auto-crypto
+Version: 19
+Installed-Size: 39
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, partman-auto (>= 81), partman-auto-lvm (>= 24), partman-crypto (>= 25), partman-base (>= 114)
+Description: Automatically partition storage devices using crypto and LVM
+Description-md5: 36b82ceea4a7c308eb115b0a0776701c
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-auto-crypto/partman-auto-crypto_19_all.udeb
+Size: 5974
+MD5sum: 00c90bd33e382741f01ed03b22ab2ddc
+SHA1: 8477c684b9ea92e38e3c7dc9c2fbe22362fcac58
+SHA256: fc446c5885080218e1b476892041f203cbae704698df9fafaf201fb622a74d61
+
+Package: partman-auto-lvm
+Version: 47
+Installed-Size: 230
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, partman-base (>= 125), partman-auto (>= 84), partman-lvm (>= 72), di-utils (>= 1.66)
+Description: Automatically partition storage devices using LVM
+Description-md5: 1e4a0ba43f3c2ad21ae0b2ae73013f6b
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-auto-lvm/partman-auto-lvm_47_all.udeb
+Size: 69924
+MD5sum: 11fed4b06dcca2a0adbcc50889e5d93e
+SHA1: 1ba9bbcda940d0938498afa5be8d36d1067edf45
+SHA256: 3c190bca221ea2bfb114b5166d8a6600cbe3e864180d44cfdebf08f67ea03de0
+
+Package: partman-auto-raid
+Version: 21
+Installed-Size: 72
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, partman-base (>= 114), partman-basicfilesystems, partman-ext3, partman-auto (>= 58), partman-md
+Description: Allow preseeded RAID installs
+Description-md5: 4980b44a46b672ade3ce96b5d7e7ad8a
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-auto-raid/partman-auto-raid_21_all.udeb
+Size: 19792
+MD5sum: 3b0f3dded564f4da5c7751ea43a34c3e
+SHA1: 77d97b3173b7c3b361a53745e2a8ede62c158339
+SHA256: 1e4b19702d6085a56645bb198e657129c003c5bcb5d3437418c3020435d40ae0
+
+Package: partman-base
+Version: 165
+Installed-Size: 546
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Provides: created-fstab, made-filesystems, mounted-partitions, partitioned-harddrives
+Depends: libc6-udeb (>= 2.13), libparted0-udeb (>= 2.2-1), cdebconf-udeb (>= 0.133), partman-utils, partman-partitioning (>= 54), partman-target, archdetect, harddrive-detection, di-utils-mapdevfs, di-utils (>= 1.66)
+Description: Partition the storage devices (partman)
+Description-md5: ebb4076ee5fc12b4583e7c980c5381eb
+Installer-Menu-Item: 4200
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-base/partman-base_165_amd64.udeb
+Size: 153726
+MD5sum: f3a281bc7d5c0bc78cf6044cf6d45b88
+SHA1: a9c79b3312a65dc7f1b412e9939ce2d1a7254d04
+SHA256: 7fa86d312f635cf221345db3e70473ac9a3a8b6163f2012021970e2045330221
+
+Package: partman-utils
+Source: partman-base
+Version: 165
+Installed-Size: 12
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libparted0-udeb (>= 2.2-1)
+Description: Utilities related to partitioning
+Description-md5: d50e0f2a82bafae199bf9188e0e9d789
+Section: debian-installer
+Priority: extra
+Filename: pool/main/p/partman-base/partman-utils_165_amd64.udeb
+Size: 3406
+MD5sum: 30f31aaf06097c64ee070706d7edaa66
+SHA1: 3e1da525fc166c78648500d9cd239fed2a9d3815
+SHA256: e908063728b62aa16ba210edee569b2980d24c2b2cc8fb0bf56cddf8182e270d
+
+Package: partman-basicfilesystems
+Version: 77
+Installed-Size: 655
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: partman-filesystem
+Depends: cdebconf-udeb, e2fsprogs-udeb, ext2-modules, fat-modules
+Description: Add to partman support for ext2, linux-swap, fat16 and fat32
+Description-md5: 8d314fe666e93a11436736d6be3d8cd7
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-basicfilesystems/partman-basicfilesystems_77_all.udeb
+Size: 164416
+MD5sum: c9de36b10cf628d19831d1be8a65c2a4
+SHA1: 43c53c8ef5c7384ce460e9aca88fa9ab6ca4c797
+SHA256: b775421fde3eb8e24e8500a77e760e8fa0345b67ba82614e1494525bc4bae1a2
+
+Package: partman-basicmethods
+Version: 52
+Installed-Size: 113
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: partman-method
+Depends: cdebconf-udeb
+Description: Basic partition usage methods for partman
+Description-md5: 836b36a4046795c47544e576cb36fa47
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-basicmethods/partman-basicmethods_52_all.udeb
+Size: 20780
+MD5sum: 69990759438d2d2c0b2cc890f132fa85
+SHA1: 6b780e5789e56f096c7f4dccdae4c6c02cfe04a7
+SHA256: 98a1436e2faa73d2e2a4a61bba3d3c39c9574c1d109651d91ed4274e40263f66
+
+Package: partman-btrfs
+Version: 10
+Installed-Size: 77
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: partman-filesystem
+Depends: cdebconf-udeb, btrfs-tools-udeb, btrfs-modules, partman-basicfilesystems (>= 59), partman-base (>= 124)
+Description: Add to partman support for btrfs
+Description-md5: 983664935a97d6109f2d5a0bf49c0587
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-btrfs/partman-btrfs_10_all.udeb
+Size: 5520
+MD5sum: 6cd60e6e7afd2bdef5a8794f1b64d72f
+SHA1: d2815faf347ad98ac6da609b0d19d4d4ec2fdcc5
+SHA256: 6d73de77ae6eace6e9e45697e5ba6e9345788409b3cd29320d6fb71e3333a4ff
+
+Package: partman-crypto
+Version: 57
+Installed-Size: 967
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: partman-base (>= 134), cdebconf-udeb (>= 0.133), libc6-udeb (>= 2.13)
+Description: Add to partman support for block device encryption
+Description-md5: 347830263d845f638b547875c959bcf5
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-crypto/partman-crypto_57_amd64.udeb
+Size: 295556
+MD5sum: b98063d71eba366d6528b9071c23779a
+SHA1: 92124ead287673c3bd5658a420cd040a4f7a5c6d
+SHA256: 64657ba44e37ff6b41a79a019ae2ef51d1afa82bcc212c96ce921f0dc7f39f26
+
+Package: partman-crypto-dm
+Source: partman-crypto
+Version: 57
+Installed-Size: 53
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: partman-crypto, crypto-modules, crypto-dm-modules, cryptsetup-udeb
+Description: Add to partman support for dm-crypt encryption
+Description-md5: e73058e9105d4a9dd08674924127e097
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-crypto/partman-crypto-dm_57_all.udeb
+Size: 1594
+MD5sum: ef1a533c215797fd87d773911a323748
+SHA1: b8f08df3cebb6a7418749b29da3ca76a8d833bbd
+SHA256: 45528c1b8da4b0e6671258a4494c2265e614b6ebe5d52035057e84d036d58792
+
+Package: partman-efi
+Version: 36
+Installed-Size: 93
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: partman-base (>= 114), efi-modules, cdebconf-udeb
+Description: Add to partman support for EFI boot partitions
+Description-md5: 374ff9e5f2ece6b047fa0fa36d9c28dd
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-efi/partman-efi_36_amd64.udeb
+Size: 33178
+MD5sum: c40b22202ef4d850f0279c8fb36de33f
+SHA1: a0c02d7a28f821e6d25bc4cb8165c49ea3cf4297
+SHA256: cdc07c776cd0c0b11f65401dbc384fa504eaf94c74dfb9086b32cecf8a2aa2f3
+
+Package: partman-ext3
+Version: 74
+Installed-Size: 290
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: partman-filesystem
+Depends: cdebconf-udeb, e2fsprogs-udeb, ext3-modules, ext4-modules, partman-basicfilesystems (>= 59), partman-base (>= 140)
+Description: Add to partman support for ext3 and ext4
+Description-md5: f4a6cc371c4b24d6846172cfb977dfe0
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-ext3/partman-ext3_74_all.udeb
+Size: 84242
+MD5sum: 3106b7939baf678f9ca0876e85c05736
+SHA1: f5692144fd81cc5a0c5e673448b392fd93871f63
+SHA256: d82b9af07fb0c48d92efbe958f68d1eb95e52061dd09fd48bb0644edb6ce9709
+
+Package: partman-jfs
+Version: 38
+Installed-Size: 141
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: partman-filesystem
+Depends: cdebconf-udeb, jfsutils-udeb, jfs-modules, partman-basicfilesystems (>= 59), partman-base (>= 124)
+Description: Add support for jfs to partman
+Description-md5: 9a58d6e05e80240eb79458d398910a29
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-jfs/partman-jfs_38_all.udeb
+Size: 26624
+MD5sum: 5a85e669645c09e3b0b6dbb44f69f527
+SHA1: ee8b02256327d11a12bb602fbd0bfd6958de7f4b
+SHA256: 00ee3ac305f0ba77cf698de0ecd867c3fb70049584f3c7ad570b231ab8192062
+
+Package: partman-lvm
+Version: 82
+Installed-Size: 1037
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb (>= 0.133), partman-base (>= 134), di-utils (>= 1.14), md-modules, lvm2-udeb
+Description: Adds support for LVM to partman
+Description-md5: 7f8e5c7b5fa97fc0638792ea59f306ff
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-lvm/partman-lvm_82_all.udeb
+Size: 308776
+MD5sum: 77a4e4f886d45d4d039a9a6d85761ab9
+SHA1: b8b1a1b0d2bbd4beab94eeb272bdc97d722f3a20
+SHA256: 309932855a2c16a2536af5b62313336507bb5dd894b1188e950d4ff2182baaef
+
+Package: partman-md
+Version: 64
+Installed-Size: 645
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, di-utils (>= 1.16), md-modules, mdadm-udeb (>= 2.5.2), partman-base (>= 134)
+Description: Add to partman support for MD
+Description-md5: ff0bf70fc09953c1d5914cb94ae5ac4b
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-md/partman-md_64_all.udeb
+Size: 201650
+MD5sum: b80526a509faa34bc1d4bc7a3354e437
+SHA1: 73dbaee70c2f7b6820fef83d0ae042b81bda821a
+SHA256: a57b19d30bd56bfe17729142b100cfec4abc2f9bdde402af1088c054719477a0
+
+Package: partman-multipath
+Version: 3
+Installed-Size: 48
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: partman-base, multipath-udeb, dmsetup-udeb
+Description: Adds support for multipath block devices to partman
+Description-md5: 2e2153aeffdb91636f89072fea8eec24
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-multipath/partman-multipath_3_all.udeb
+Size: 1330
+MD5sum: 873c0b2f1b372ad219fcd269c4d53629
+SHA1: 3055e7191e712e6d103969892a680cfa165ecda8
+SHA256: 9035d249f3f484dfa7c9beac4568d98b2e919c8d7c59e26ad58c5032ef0109fd
+
+Package: partman-nbd
+Version: 0.18
+Installed-Size: 202
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: cdebconf-udeb, partman-base, nbd-client-udeb, nbd-modules, configured-network
+Description: Adds support for NBD to partman
+Description-md5: 18d308acf498c3f952d3d9708d505c07
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-nbd/partman-nbd_0.18_amd64.udeb
+Size: 52524
+MD5sum: a0f99074fe1f075502aeaa9f4e933f29
+SHA1: e911e2d6fd8cc8b521852357ec4584f6761ceb9d
+SHA256: 5d032e7083ef83c0a569cd35d0d407d4d83d4a1d8e43b813353361e56cc5b32a
+
+Package: partman-partitioning
+Version: 91
+Installed-Size: 685
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: amd64
+Depends: e2fsprogs-udeb, ntfsprogs-udeb, cdebconf-udeb, di-utils (>= 1.66)
+Description: Partitioning operations for partman
+Description-md5: 0ffef719d737b8746863f8419eaa3f07
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-partitioning/partman-partitioning_91_amd64.udeb
+Size: 210698
+MD5sum: b59369964055896add600402972ea987
+SHA1: 9f7539e40b9b2d69d23327908f74805363e3392f
+SHA256: 90ec736e3071c14d79d8ff84188be73372c576a855980390d39c1f7825bad6a4
+
+Package: partman-reiserfs
+Version: 53
+Installed-Size: 79
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: partman-filesystem
+Depends: cdebconf-udeb, mkreiserfs-udeb, reiserfs-modules, partman-basicfilesystems (>= 59), partman-base (>= 124)
+Description: Add to partman support for reiserfs
+Description-md5: 7679c06197c249592831fcbf1d1a48a3
+Installer-Menu-Item: 99999
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/partman-reiserfs/partman-reiserfs_53_all.udeb
+Size: 6028
+MD5sum: 9b61ee792fc79d0cccc5d2ece0ead33a
+SHA1: d4c96d26c1c5974f4383a42f6bc7874703848b5b
+SHA256: 90bdc3f08d71fcdc65c07978fe1b2a9a9dd8c47c5aae1a2c6fd933ccfd8304d5
+
+Package: partman-target
+Version: 82
+Installed-Size: 404
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, partman-basicfilesystems, partman-basicmethods, di-utils-mapdevfs, di-utils (>= 1.68)
+Description: Provides partman with ability to prepare /target
+Description-md5: 535ff0bb18e2c09365d0dea98fe407e9
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-target/partman-target_82_all.udeb
+Size: 118928
+MD5sum: 6c8cfcb4f6b66da13e0b87dbc250b47e
+SHA1: 6c41f29ad0342e826e296ae30ace8168a2cd4592
+SHA256: b53f22075af66cd9a6e8a6f5e6199262ccbff5f39dc5b00e9422befc2c304b3b
+
+Package: partman-ufs
+Version: 14
+Installed-Size: 125
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: partman-filesystem
+Depends: cdebconf-udeb, ufsutils-udeb, ufs-modules, partman-basicfilesystems (>= 59), partman-base (>= 124)
+Description: Add to partman support for UFS
+Description-md5: 52cdf9b7a747e54ec6bc0b4df6c0d85a
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-ufs/partman-ufs_14_all.udeb
+Size: 22454
+MD5sum: bc6c7d69ce12ec0f888f62dbae5f96c8
+SHA1: a7be64163c4fa8b94acf57cb23e716a832712553
+SHA256: 78f61b1638724e4397061c037abf3ea15ea7dcba9aa14266066b4e73d4b56dd0
+
+Package: partman-xfs
+Version: 50
+Installed-Size: 76
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Provides: partman-filesystem
+Depends: cdebconf-udeb, xfsprogs-udeb, xfs-modules, partman-basicfilesystems (>= 59), partman-base (>= 124)
+Description: Add to partman support for xfs
+Description-md5: 0f1313afd09b046ba0c90035673f6ef9
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/partman-xfs/partman-xfs_50_all.udeb
+Size: 5566
+MD5sum: 0e19c19b20969964dae504ff75597364
+SHA1: f17c1e763e195654a3a860b9fef92c574ebaa2a5
+SHA256: 88257c3b2fc8a4ea5e6c4002554f54f09d818690b53df777f73b528fc3e15074
+
+Package: libpci3-udeb
+Source: pciutils
+Version: 1:3.1.9-6
+Installed-Size: 64
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: Linux PCI Utilities (shared library)
+Description-md5: fc41bf153f9fa98cadf3f431bf3b5138
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/pciutils/libpci3-udeb_3.1.9-6_amd64.udeb
+Size: 20386
+MD5sum: 7ee188a114ccc24b4a1d9e21e8decf72
+SHA1: 5607ca576c007cd5df6163c99493751074f898e6
+SHA256: 15d55363ce94d253a4f2d74dcf8248fb62964d4717bcea3d7c5e21520b72d3ba
+
+Package: pciutils-udeb
+Source: pciutils
+Version: 1:3.1.9-6
+Installed-Size: 244
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: Linux PCI Utilities (udeb)
+Description-md5: e343b083c25ee656af4e5a4626771a3d
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/pciutils/pciutils-udeb_3.1.9-6_amd64.udeb
+Size: 164816
+MD5sum: 8ef17ec129d36fa40462e4e2ea8a0c86
+SHA1: 15d0b88609fe734e856db496b45d0b4cc58380f9
+SHA256: 2dcc61a5a04ad329cd9e9f3f72af26857ac8ec90ab1b44914f012209e0fab43f
+
+Package: pcmciautils-udeb
+Source: pcmciautils
+Version: 018-8
+Installed-Size: 63
+Maintainer: Colin Watson <cjwatson@debian.org>
+Architecture: amd64
+Depends: udev-udeb, libc6-udeb (>= 2.13)
+Description: PCMCIA utilities for Linux 2.6
+Description-md5: 9a2b724c995238d919436ada07ecdd6a
+Section: debian-installer
+Priority: extra
+Filename: pool/main/p/pcmciautils/pcmciautils-udeb_018-8_amd64.udeb
+Size: 13724
+MD5sum: dbd08bc9cd72c1a032130161ebd822b2
+SHA1: f9a160b8fd4e2d408950d4721d28bd7c354478d2
+SHA256: 4bd56d74a469bc7e3b22bbbd06b285b8138b28a2f8738723866816cebf849113
+
+Package: pkgsel
+Version: 0.37
+Installed-Size: 51
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, apt-setup-udeb, di-utils (>= 1.56)
+Description: Select and install packages
+Description-md5: 3daecd491b846f306b5069932c089763
+Installer-Menu-Item: 7000
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/pkgsel/pkgsel_0.37_all.udeb
+Size: 10836
+MD5sum: 9a969304a6406d4a00c873f899be4282
+SHA1: ef8891a9156db70cf6eafd24bf4544a672b5518b
+SHA256: 71123b6738d105cfdc85d229ba9200895a8a401023d02b406b13c1f4041eacbd
+
+Package: libpopt0-udeb
+Source: popt
+Version: 1.16-7
+Installed-Size: 42
+Maintainer: Paul Martin <pm@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: lib for parsing cmdline parameters
+Description-md5: 3c1f94d22ed12e00b0d2f6d831ee7afe
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/popt/libpopt0-udeb_1.16-7_amd64.udeb
+Size: 19136
+MD5sum: 36972ca898cad21e35336727f1c3db2c
+SHA1: e2a554461cd97414533ef2678a2f7eaebd4653e8
+SHA256: 98a94b8a0991abec2176db22345dfee6384177a743826636c6d06eac209bfaa0
+
+Package: ppp-udeb
+Source: ppp (2.4.5-5.1)
+Version: 2.4.5-5.1+b1
+Installed-Size: 339
+Maintainer: Marco d'Itri <md@linux.it>
+Architecture: amd64
+Provides: configured-network
+Depends: libc6-udeb (>= 2.13), cdebconf-udeb, ethernet-card-detection, ppp-modules, di-utils
+Description: Point-to-Point Protocol (PPP) - package for Debian Installer
+Description-md5: b69bf100780aa0e09608f5c4f9be3a35
+Installer-Menu-Item: 1700
+Section: debian-installer
+Priority: optional
+Filename: pool/main/p/ppp/ppp-udeb_2.4.5-5.1+b1_amd64.udeb
+Size: 112958
+MD5sum: 01f6b1864c1ef46fb21a5d440ec4fa4b
+SHA1: 25445be93e3eedcc609dc8704b8e987287c6bd4c
+SHA256: 83ee2b2505230c94a6d2b580b444a54cc021af9ea550a60c7fccf01e06b5d72c
+
+Package: network-preseed
+Source: preseed
+Version: 1.58
+Installed-Size: 102
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, configured-network, preseed-common
+Description: download debconf preseed file
+Description-md5: a6e66d9e328604ad56c71f7b50168f78
+Installer-Menu-Item: 2100
+Section: debian-installer
+Priority: standard
+Filename: pool/main/p/preseed/network-preseed_1.58_all.udeb
+Size: 30294
+MD5sum: d7ad4baaa6b4909eb5444936ce6cb5f6
+SHA1: e869091ec24d5d83736a00c89965d8ffa1d197d5
+SHA256: 859fb87cf30cedb5cfc984b622d25d32d4611b713556911a96caa4563fafe306
+
+Package: rdate-udeb
+Source: rdate
+Version: 1:1.2-5
+Installed-Size: 34
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: amd64
+Depends: libbsd0-udeb, libc6-udeb (>= 2.13)
+Description: sets the system's date from a remote host
+Description-md5: 1b08d6568efd3c37082807154d086ec1
+Section: debian-installer
+Priority: optional
+Filename: pool/main/r/rdate/rdate-udeb_1.2-5_amd64.udeb
+Size: 6712
+MD5sum: 995a5d96eb5da880a1013a9c323c03ce
+SHA1: 653f0ab00e45bc8ac54549b1adcb824c0c028c61
+SHA256: 5e691ffa5a6ced6f81f5993456f346c68d9864648c3356acafbcad660c6ea286
+
+Package: mkreiserfs-udeb
+Source: reiserfsprogs
+Version: 1:3.6.21-1
+Installed-Size: 176
+Maintainer: Felix Zielcke <fzielcke@z-51.de>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.9), libuuid1-udeb
+Description: User-level tools for ReiserFS filesystems
+Description-md5: bd86c76e836a39d1fcb359e10bc96062
+Section: debian-installer
+Priority: optional
+Filename: pool/main/r/reiserfsprogs/mkreiserfs-udeb_3.6.21-1_amd64.udeb
+Size: 79686
+MD5sum: 2502ea1237a302bf05c3384181361c8c
+SHA1: 406662edf5f5c7e451df10b58462b4a4e4845b8a
+SHA256: 76c5438ea1f54a59943775fe33d44d3510c32261693400a153f34b39bf280d9e
+
+Package: reiserfsprogs-udeb
+Source: reiserfsprogs
+Version: 1:3.6.21-1
+Installed-Size: 692
+Maintainer: Felix Zielcke <fzielcke@z-51.de>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.9), libuuid1-udeb
+Description: User-level tools for ReiserFS filesystems
+Description-md5: d10d973d0ed434e6ce8d732e5153eec4
+Section: debian-installer
+Priority: optional
+Filename: pool/main/r/reiserfsprogs/reiserfsprogs-udeb_3.6.21-1_amd64.udeb
+Size: 322658
+MD5sum: 1c4b2b4ed26e7ce6b9d032b300843710
+SHA1: 24ac8a27747f7c4a425b2671c7a644a125836377
+SHA256: 8c187d1e4682409d173aa017ee33deb6d5b81872fe0be26cc8cb4853fab7e0a0
+
+Package: rescue-mode
+Source: rescue
+Version: 1.35
+Installed-Size: 388
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: rescue-check, cdebconf-udeb (>= 0.73), harddrive-detection, e2fsprogs-udeb, ext2-modules, ext3-modules, ext4-modules, fat-modules, jfsutils-udeb, jfs-modules, md-modules, crypto-dm-modules, reiserfsprogs-udeb, reiserfs-modules, xfsprogs-udeb, xfs-modules, lvm2-udeb, mdadm-udeb (>= 2.5.2), di-utils (>= 1.62), crypto-modules, cryptsetup-udeb, fdisk-udeb, parted-udeb
+Description: mount requested partition and start a rescue shell
+Description-md5: f1cb9911a18aba8cd4eab25ea8c3afd3
+Installer-Menu-Item: 3900
+Section: debian-installer
+Priority: optional
+Filename: pool/main/r/rescue/rescue-mode_1.35_all.udeb
+Size: 134946
+MD5sum: fee476623d066fa7e0746161ccf1ae2d
+SHA1: 9b7a0269726158e8639b54bcf9a80623c2c54cf8
+SHA256: 837c6d7ca1a65d8a5308ca33436ddcbc746cce2b40cad6ec0ad7948000814d05
+
+Package: strace-udeb
+Source: strace
+Version: 4.5.20-2.3
+Installed-Size: 328
+Maintainer: Frederik Schüler <fs@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.11)
+Description: A system call tracer
+Description-md5: 8dfd6c54546ce8bc0b434bdf199c5fe6
+Section: debian-installer
+Priority: extra
+Filename: pool/main/s/strace/strace-udeb_4.5.20-2.3_amd64.udeb
+Size: 107034
+MD5sum: 0f6364cea07c862a118c0d5e47c1c142
+SHA1: 4b62ae1ea366403f1eabd9ce5eb4fa1cd4b3f98b
+SHA256: 662a3204ae9b008496e8e8cfbd60de352531b57c138086b3e2a9a71d36c63dc9
+
+Package: libsysfs2-udeb
+Source: sysfsutils
+Version: 2.1.0+repack-2
+Installed-Size: 77
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: interface library to sysfs
+Description-md5: b1be79f1094a5502026b2794513bd54b
+Section: debian-installer
+Priority: optional
+Filename: pool/main/s/sysfsutils/libsysfs2-udeb_2.1.0+repack-2_amd64.udeb
+Size: 16488
+MD5sum: 3d3a17cf23d9066ede1e5d7fd58a2042
+SHA1: fa2dbafc313dc914e7425a342ff86474e8fac965
+SHA256: 56fba06c6d2dff0cc27ae09256b17499185bcda212aa8d9b85fb01c32a59675d
+
+Package: syslinux-udeb
+Source: syslinux
+Version: 2:4.05+dfsg-6+deb7u1
+Installed-Size: 129
+Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: collection of boot loaders
+Description-md5: 8fbf99db66e4be27ee55dc8639a62a00
+Section: debian-installer
+Priority: optional
+Filename: pool/main/s/syslinux/syslinux-udeb_4.05+dfsg-6+deb7u1_amd64.udeb
+Size: 40338
+MD5sum: e2a5533960b153fa46909701dddf4d23
+SHA1: 828326d300c3a8a21a91a5ef0b73fc10ca604422
+SHA256: dd8cac9b940ba559932e54ab2e2b32cdf0041a7e8ed024f5bfdea54a5297fed5
+
+Package: tzsetup-udeb
+Source: tzsetup
+Version: 1:0.42
+Installed-Size: 289
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb, localechooser
+Description: choose time zone
+Description-md5: 4748312c715d3e534fdac57879f07da3
+Section: debian-installer
+Priority: optional
+Filename: pool/main/t/tzsetup/tzsetup-udeb_0.42_all.udeb
+Size: 75492
+MD5sum: 05c902c46a54efaf7bfdc20e8e644d9a
+SHA1: 26a461041486c94d72f7fafc1482721bb29e99a4
+SHA256: 9ddc3a0d48eaa030373a9d9492e39afff6d3e3bd362cd3703accf621378aec5d
+
+Package: usbutils-udeb
+Source: usbutils
+Version: 1:005-3
+Installed-Size: 247
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libusb-1.0-0-udeb, zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: Linux USB utilities
+Description-md5: 853ba341c900631e2dfe631ca6dd83f6
+Section: debian-installer
+Priority: optional
+Filename: pool/main/u/usbutils/usbutils-udeb_005-3_amd64.udeb
+Size: 199470
+MD5sum: 781197e73d0f98f3752a86007ad3f531
+SHA1: d7c9f3cfbc5a0fbfe0c987e88dcb0d2b69765bde
+SHA256: c41db136f9b1c08bda4475c9c6023b3b7160446acf9393230b4977530c0b634b
+
+Package: user-setup-udeb
+Source: user-setup
+Version: 1.48
+Installed-Size: 454
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Depends: cdebconf-udeb (>= 0.133)
+Description: Set up users and passwords
+Description-md5: 243d3a0b8c30e62b589266a9194580df
+Installer-Menu-Item: 2400
+Section: debian-installer
+Priority: standard
+Filename: pool/main/u/user-setup/user-setup-udeb_1.48_all.udeb
+Size: 159914
+MD5sum: 3c604f45088eb625f27aaad59328ade0
+SHA1: ea5766bd87577365bdedccaeddf8d6325bc97f63
+SHA256: 1073812af2bb2ccaa3a11e4694bd95f37b1bdc62b8bcf708c886d6a3ed02c800
+
+Package: cfdisk-udeb
+Source: util-linux
+Version: 2.20.1-5.3
+Installed-Size: 4082
+Maintainer: LaMont Jones <lamont@debian.org>
+Architecture: amd64
+Depends: libblkid1-udeb (>= 2.16), libc6-udeb (>= 2.13), libslang2-udeb (>= 2.2.4)
+Description: Manually partition a hard drive (cfdisk)
+Description-md5: d771ac6c2a10d8b8e0bdb19360ffb025
+Installer-Menu-Item: 99999
+Section: debian-installer
+Priority: extra
+Filename: pool/main/u/util-linux/cfdisk-udeb_2.20.1-5.3_amd64.udeb
+Size: 773574
+MD5sum: 35fa62bd0aa8b67454acb39c285ad23e
+SHA1: 6f5b691d68e7a827278266b5221d98b22b2b9484
+SHA256: f6b15d313f9c78fbac5e44bbd738927044cb3b8c40a008efe04978d26ed07544
+
+Package: fdisk-udeb
+Source: util-linux
+Version: 2.20.1-5.3
+Installed-Size: 158
+Maintainer: LaMont Jones <lamont@debian.org>
+Architecture: amd64
+Depends: libblkid1-udeb (>= 2.16), libc6-udeb (>= 2.13)
+Description: Manually partition a hard drive (fdisk)
+Description-md5: 6f79c67e140579da2e82b631a927d47f
+Installer-Menu-Item: 99999
+Section: debian-installer
+Priority: extra
+Filename: pool/main/u/util-linux/fdisk-udeb_2.20.1-5.3_amd64.udeb
+Size: 63784
+MD5sum: ff2618460701da6a957a17e4edeebbe7
+SHA1: eede3d073ed8033bd40f5e3ad10beaf727515024
+SHA256: 8e42c9683f03d96c6c4145488c6e9f6f479b3bf4f6e6331cd33a81df05e53bbd
+
+Package: libblkid1-udeb
+Source: util-linux
+Version: 2.20.1-5.3
+Installed-Size: 157
+Maintainer: LaMont Jones <lamont@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libuuid1-udeb (>= 2.16)
+Description: block device id library
+Multi-Arch: same
+Description-md5: 428e6e03d7ef8f937b6c6378e7f74172
+Section: debian-installer
+Priority: optional
+Filename: pool/main/u/util-linux/libblkid1-udeb_2.20.1-5.3_amd64.udeb
+Size: 61892
+MD5sum: 39305a04ae6cb2ee2d2d356d9ca05647
+SHA1: c06e03a651f23518ed7afefeba1c2a40bc9b9a43
+SHA256: e46da8a22e89609d496d9dce145929827f578451ad28857de0d9b5b6d6341ac0
+
+Package: libmount1-udeb
+Source: util-linux
+Version: 2.20.1-5.3
+Installed-Size: 161
+Maintainer: LaMont Jones <lamont@debian.org>
+Architecture: amd64
+Depends: libblkid1-udeb (>= 2.16), libc6-udeb (>= 2.13), libselinux1, libsepol1
+Description: block device id library
+Description-md5: 77f4f9b007c8a3f9e603f4b601b5558e
+Section: debian-installer
+Priority: optional
+Filename: pool/main/u/util-linux/libmount1-udeb_2.20.1-5.3_amd64.udeb
+Size: 59430
+MD5sum: f6e9176f69161ecf90f75af12c0e751f
+SHA1: 8d07e20b1d62a825c13889f5a568e3bfbde8fd8f
+SHA256: e8c7a6b72567181fb5cb218098dc7acd1125d48afbe64946733036965b561ae0
+
+Package: libuuid1-udeb
+Source: util-linux
+Version: 2.20.1-5.3
+Installed-Size: 19
+Maintainer: LaMont Jones <lamont@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: stripped down universally unique id library, for debian-installer
+Description-md5: f592706042e21307e4b9adcdcbb56878
+Section: debian-installer
+Priority: optional
+Filename: pool/main/u/util-linux/libuuid1-udeb_2.20.1-5.3_amd64.udeb
+Size: 7338
+MD5sum: c0a8737eb250e4ca665773210b050740
+SHA1: f46b79817e9f3c73b8c6137e27beac0f516835eb
+SHA256: 335f56427e4638b9863db28600576817bf388b6df85210dd3d8d9ad7abed3f50
+
+Package: util-linux-udeb
+Source: util-linux
+Version: 2.20.1-5.3
+Installed-Size: 31
+Maintainer: LaMont Jones <lamont@debian.org>
+Architecture: amd64
+Depends: libblkid1-udeb (>= 2.16), libc6-udeb (>= 2.13)
+Description: Miscellaneous system utilities
+Description-md5: 57e9aa43dafa2a3fe60871626209fb95
+Section: debian-installer
+Priority: optional
+Filename: pool/main/u/util-linux/util-linux-udeb_2.20.1-5.3_amd64.udeb
+Size: 12274
+MD5sum: 7bd637ea1acb3a1d9c31fe3d6d5c0462
+SHA1: ca245a8e3656cc60f98c193af3d3e56a762b17e3
+SHA256: 95975d294e987591eecd3d49e2db898d09becb5526bb084b0fee309f98798018
+
+Package: libvte-2.90-9-udeb
+Source: vte3
+Version: 1:0.32.2-1
+Installed-Size: 627
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libatk1.0-udeb (>= 2.4.0), libc6-udeb (>= 2.13), libcairo-gobject2 (>= 1.10.0), libcairo2-udeb (>= 1.12.0), libgdk-pixbuf2.0-0-udeb (>= 2.26.1), libglib2.0-udeb (>= 2.32.3), libgtk-3-0-udeb (>= 3.4.2), libpango1.0-udeb (>= 1.29.4), libx11-6-udeb (>= 2:1.4.99.1)
+Description: Terminal emulator widget for GTK+ 3.0 - minimal runtime
+Description-md5: 4a408fae827711915e0ca68b676f15dc
+Section: debian-installer
+Priority: extra
+Filename: pool/main/v/vte3/libvte-2.90-9-udeb_0.32.2-1_amd64.udeb
+Size: 222296
+MD5sum: 0ee709b9846558d1581651d512e8b380
+SHA1: 83b2b59319acf1c92818df7f0591bfd218f1626f
+SHA256: 9c30c1b267a69e07d5101ff4edf6ba9deeea41d35a481c96dd25727dcea01fec
+
+Package: wide-dhcpv6-client-udeb
+Source: wide-dhcpv6
+Version: 20080615-11.1
+Installed-Size: 173
+Maintainer: Jérémie Corbier <jcorbier@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: DHCPv6 client for automatic IPv6 hosts configuration
+Description-md5: 00456bb3e41e9017a7457b8b0494a35a
+Section: debian-installer
+Priority: optional
+Filename: pool/main/w/wide-dhcpv6/wide-dhcpv6-client-udeb_20080615-11.1_amd64.udeb
+Size: 68938
+MD5sum: 284807aa6a2e7a55dd0d06577106dd4d
+SHA1: 70a9ace3141331132d404212aee5231f104e20c5
+SHA256: 3338d866724909ee0a52af84ccfb2f204065d2346b401d5720f10ab7b83eeb90
+
+Package: libiw30-udeb
+Source: wireless-tools
+Version: 30~pre9-8
+Installed-Size: 41
+Maintainer: Guus Sliepen <guus@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13)
+Description: Tools for manipulating Linux Wireless Extensions
+Description-md5: 75eafca65efd63a40465eb2ac97dd653
+Section: debian-installer
+Priority: extra
+Filename: pool/main/w/wireless-tools/libiw30-udeb_30~pre9-8_amd64.udeb
+Size: 14652
+MD5sum: 2f4970530f916accd6206c6c083a632b
+SHA1: 4a3e9aa98e90d52b505a0799ddd56fbcf3109905
+SHA256: c6a528d8b2512cda8ff1a3c606b302c8d63189b1d0b79a3afb966f2cec9831eb
+
+Package: wireless-tools-udeb
+Source: wireless-tools
+Version: 30~pre9-8
+Installed-Size: 45
+Maintainer: Guus Sliepen <guus@debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libiw30-udeb (>= 30~pre1)
+Description: Tools for manipulating Linux Wireless Extensions
+Description-md5: 75eafca65efd63a40465eb2ac97dd653
+Section: debian-installer
+Priority: extra
+Filename: pool/main/w/wireless-tools/wireless-tools-udeb_30~pre9-8_amd64.udeb
+Size: 13906
+MD5sum: 6f79802aabeb1c0eae5585b77512b3af
+SHA1: 76543499de26f5dede993a08cc6ec2fc53648fe0
+SHA256: dacde9ed5144e1aa5ebd39d1668ba29a222ad0cde946426a88beaa2f3720935b
+
+Package: wpasupplicant-udeb
+Source: wpa (1.0-3)
+Version: 1.0-3+b2
+Installed-Size: 405
+Maintainer: Debian/Ubuntu wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libcrypto1.0.0-udeb (>= 1.0.0), libnl-3-200-udeb (>= 3.2.7), libnl-genl-3-200-udeb (>= 3.2.7), busybox-udeb
+Description: Client support for WPA and WPA2 (IEEE 802.11i)
+Description-md5: e3540446016a3f489bb316d5d75850d8
+Section: debian-installer
+Priority: standard
+Filename: pool/main/w/wpa/wpasupplicant-udeb_1.0-3+b2_amd64.udeb
+Size: 154536
+MD5sum: ee089b9d98bcd1aaabf77ebecd64c4ef
+SHA1: 76765b0d2d3a466c382a152b888e3647032b0812
+SHA256: 5d6d945a9a754b294ad5a2072c47c60494cb98a6d0020bc9907c15e7628535fd
+
+Package: xfsprogs-udeb
+Source: xfsprogs (3.1.7)
+Version: 3.1.7+b1
+Installed-Size: 230
+Maintainer: XFS Development Team <xfs@oss.sgi.com>
+Architecture: amd64
+Depends: libc6-udeb (>= 2.13), libuuid1-udeb (>= 2.16)
+Description: A stripped-down version of xfsprogs, for debian-installer
+Description-md5: 61e64f60ad3161722cb5c6ebc2be724e
+Section: debian-installer
+Priority: optional
+Filename: pool/main/x/xfsprogs/xfsprogs-udeb_3.1.7+b1_amd64.udeb
+Size: 106124
+MD5sum: 81f1e8956043be13d60892a3dd148234
+SHA1: 7e21016304cf95edbe9f1146f22f688705ccae78
+SHA256: da0ca7f8238bf8a63dcb922b42da16c64ecdabeff715ed664c6cbdaba888db28
+
+Package: zlib1g-udeb
+Source: zlib
+Version: 1:1.2.7.dfsg-13
+Installed-Size: 111
+Maintainer: Mark Brown <broonie@debian.org>
+Architecture: amd64
+Description: compression library - runtime for Debian installer
+Description-md5: 9cab974e3eab657c53bc17611b894c7a
+Section: debian-installer
+Priority: optional
+Filename: pool/main/z/zlib/zlib1g-udeb_1.2.7.dfsg-13_amd64.udeb
+Size: 43440
+MD5sum: 38de646e4ac46bce997bc73c09104ddd
+SHA1: 6fdf5c5b6403dff593630baf1a36c3c7335112dc
+SHA256: 34273fbbc61baa4a28b7ff3d48679692147c0614a55e77a4e675efbd018717cf
+

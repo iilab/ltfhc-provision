@@ -1,0 +1,6 @@
+Archive: stable
+Origin: Debian
+Label: Debian
+Version: 7.6
+Component: main
+Architecture: amd64
