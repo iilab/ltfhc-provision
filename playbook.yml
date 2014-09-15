@@ -1,0 +1,124 @@
+---
+- hosts: all
+
+  tasks:
+    - name: Install Cobbler Repo
+      apt_repository: repo='deb http://download.opensuse.org/repositories/home:/libertas-ict:/cobbler26/Debian_7.0/ ./' state=present
+      sudo: true
+    - name: Install Cobbler Repo Key
+      apt_key: url=http://download.opensuse.org/repositories/home:/libertas-ict:/cobbler26/Debian_7.0/Release.key state=present
+      sudo: true
+    - name: Update packages
+      apt: update_cache=yes
+      sudo: true
+    - name: Install dnsmasq Package
+      apt: pkg=dnsmasq state=latest
+      sudo: true
+    - name: Install xinet.d Package
+      apt: pkg=xinetd state=latest
+      sudo: true
+    - name: Install tftpd-hpa Package
+      apt: pkg=tftpd-hpa state=latest
+      sudo: true
+    - name: Do not run tftpd-hpa as a daemon 
+      lineinfile: dest=/etc/default/tftpd-hpa line='RUN_DAEMON="no"'
+      sudo: true
+    - name: Activate ip routing
+      lineinfile: dest=/etc/sysctl.conf line='net.ipv4.ip_forward = 1'
+      sudo: true      
+    - name: Install python-django Package for cobbler_web
+      apt: pkg=python-django state=latest
+      sudo: true
+    - name: Install Cobbler Package
+      apt: pkg=cobbler state=latest
+      sudo: true
+    - name: Configure Cobbler on bridged static IP 192.168.168.168 
+      lineinfile: "dest=/etc/cobbler/settings regexp='^next_server:' line='next_server: 192.168.168.100'"
+      sudo: true
+    - name: Configure Cobbler on bridged static IP 192.168.168.168 
+      lineinfile: "dest=/etc/cobbler/settings regexp='^server:' line='server: 192.168.168.100'"
+      sudo: true
+    - name: Configure Cobbler for dnsmasq (dhcp)
+      ini_file: dest=/etc/cobbler/modules.conf section=dhcp option=module value=manage_dnsmasq
+      sudo: true
+    - name: Configure Cobbler for dnsmasq (dns)
+      ini_file: dest=/etc/cobbler/modules.conf section=dns option=module value=manage_dnsmasq
+      sudo: true
+    - name: Manage DHCP 
+      lineinfile: "dest=/etc/cobbler/settings regexp='^manage_dhcp:' line='manage_dhcp: 1'"
+      sudo: true
+    - name: Restart DHCP 
+      lineinfile: "dest=/etc/cobbler/settings regexp='^restart_dhcp:' line='restart_dhcp: 1'"
+      sudo: true
+    - name: Manage DNS 
+      lineinfile: "dest=/etc/cobbler/settings regexp='^manage_dns:' line='manage_dns: 1'"
+      sudo: true
+    - name: Restart DNS 
+      lineinfile: "dest=/etc/cobbler/settings regexp='^restart_dns:' line='restart_dns: 1'"
+      sudo: true
+    - name: Copy debian.seed 
+      copy: src=debian.seed dest=/var/lib/cobbler/kickstarts/debian.seed
+      sudo: yes
+    - name: Setup DHCP template 
+      copy: src=dnsmasq.template dest=/etc/cobbler/dnsmasq.template 
+      sudo: yes
+    - name: Install wsgi Package
+      apt: pkg=libapache2-mod-wsgi state=latest
+      sudo: true
+    - name: Enable wsgi apache module
+      apache2_module: state=present name=wsgi
+      sudo: true
+    - name: Enable proxy apache module
+      apache2_module: state=present name=proxy
+      sudo: true
+    - name: Enable proxy_http apache module
+      apache2_module: state=present name=proxy_http
+      sudo: true
+    - name: Install python-pip Package
+      apt: pkg=python-pip state=latest
+      sudo: true
+    - name: Install Curl Package
+      apt: pkg=curl state=latest
+      sudo: true
+    - name: Install python-dev Package
+      apt: pkg=python-dev state=latest
+      sudo: true
+    - name: Install Curl Library Package
+      apt: pkg=libcurl4-openssl-dev state=latest
+      sudo: true
+    - name: Install simplejson python library
+      pip: name=simplejson
+      sudo: yes      
+    - name: Install pycurl python library
+      pip: name=pycurl
+      sudo: yes      
+    - name: Install urlgrabber python library
+      pip: name=urlgrabber
+      sudo: yes      
+    - name: Restart Cobblerd
+      service: name=cobblerd state=restarted
+      sudo: yes
+    - name: Restart apache2
+      service: name=apache2 state=restarted
+      sudo: yes
+    - file: name=/srv/tftp owner=root group=root state=directory
+      sudo: yes
+    - name: Import Debian 7 image in Cobbler
+      command: cobbler import --name=debian7-net --breed=debian --arch=amd64 --os-version=wheezy --path="rsync://ftp.us.debian.org/debian/dists/wheezy/main/installer-amd64/current/images/netboot/debian-installer/amd64"
+      sudo: yes
+    - name: Create system for ltfhc-bujumbura test server. 
+      command: cobbler system add --name=ltfhc-bujumbura --profile=debian7-net-x86_64 --kickstart=/var/lib/cobbler/kickstarts/debian.seed
+      sudo: yes 
+    - name: Setup ltfhc-bujumbura test server
+      command: cobbler system edit --name=ltfhc-bujumbura --interface=eth0 --mac=00:1F:F2:08:3B:A1 --ip-address=192.168.168.170 --netmask=255.255.255.0 --static=1 --dns-name=bujumbura
+      sudo: yes
+    - name: Setup gateway 
+      command: cobbler system edit --name=ltfhc-bujumbura --gateway=192.168.168.1 --name-servers=8.8.8.8 --hostname=bujumbura
+      sudo: yes
+    - name: Change persmissions for cobbler_web
+      file: owner=www-data path=/var/lib/cobbler/
+      sudo: true
+    - name: Cobbler synchronisation to update dhcp with static ip.
+      command: cobbler sync
+      sudo: yes
+

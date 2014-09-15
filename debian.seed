@@ -1,0 +1,65 @@
+#set $myhostname = $getVar('hostname',$getVar('name','cobbler')).replace("_","-")
+d-i netcfg/choose_interface select eth1
+d-i netcfg/get_hostname string $myhostname
+
+# Console setting
+d-i debian-installer/locale string en_US
+d-i keyboard-configuration/xkb-keymap select us
+d-i console-keymaps-at/keymap select us
+d-i debian-installer/locale string en_US
+d-i console-setup/ask_detect boolean false
+d-i console-setup/layoutcode string us
+d-i console-setup/charmap string UTF-8
+d-i console-setup/codeset string Latin1
+d-i console-setup/dont_ask_layout boolean true
+
+# Disk Partitioning
+# Use LVM, and wipe out anything that already exists
+d-i partman-auto/disk string /dev/sda
+d-i partman-auto/method string regular
+d-i partman-auto/purge_lvm_from_device boolean true
+d-i partman-auto/choose_recipe select /lib/partman/recipes/30atomic
+
+# This makes partman automatically partition without confirmation, provided
+# that you told it what to do using one of the methods above.
+d-i partman-partitioning/confirm_write_new_label boolean true
+d-i partman/choose_partition select finish
+d-i partman/confirm boolean true
+d-i partman/confirm_nooverwrite boolean true
+
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/with_other_os boolean true
+d-i grub-pc/install_devices multiselect /dev/sda
+
+# root account and password
+d-i passwd/root-login boolean true
+d-i passwd/root-password-crypted password $default_password_crypted
+
+# skip creation of a normal user account.
+d-i passwd/make-user boolean false
+
+$SNIPPET('preseed_apt_repo_config')
+
+# Individual additional packages to install
+# wget is REQUIRED otherwise quite a few things won't work
+# later in the build (like late-command scripts)
+d-i pkgsel/include string ntp ssh wget
+
+# Avoid that last message about the install being complete.
+d-i finish-install/reboot_in_progress note
+
+
+# This first command is run as early as possible, just after preseeding is read.
+# d-i preseed/early_command string [command]
+d-i preseed/early_command string wget -O- \
+   http://$http_server/cblr/svc/op/script/$what/$name/?script=preseed_early_default | \
+   /bin/sh -s
+
+# This command is run just before the install finishes, but when there is
+# still a usable /target directory. You can chroot to /target and use it
+# directly, or use the apt-install and in-target commands to easily install
+# packages and run commands in the target system.
+# d-i preseed/late_command string [command]
+d-i preseed/late_command string wget -O- \
+   http://$http_server/cblr/svc/op/script/$what/$name/?script=preseed_late_default | \
+   chroot /target /bin/sh -s
